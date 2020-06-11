@@ -1,0 +1,94 @@
+.uk-navbar-left {
+    h4 {
+        margin: 0 15px;
+        
+    }
+}
+
+.navbar {
+    margin: 0 !important;
+}
+
+.li__special {
+    margin: 1rem 0;
+
+    .uk-button-default {
+        color: white !important;
+        font-weight: 600;
+        background-color: $btn-color-red !important;
+    }
+}
+
+.banner {
+    background: url('../img/bgBanner.png') center;
+    background-size: cover;
+
+    &__judul {
+        
+        padding: 4rem 4rem 7rem 4rem;
+        color: $secondary-color;
+    }
+}
+
+.steps {
+
+    .flex {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+
+
+        figcaption {
+            h5 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                padding: 0 1.5rem;
+            }
+           
+        }
+    }
+}
+
+.card-boxes {
+    .flex-card {
+       
+ 
+
+        -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+   h1 {
+       text-align: center;
+       font-size: 1.5rem;
+   }
+
+   figure {
+       padding: 0 2rem;
+       figcaption {
+        h1 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+   }
+
+  
+   }
+}
+
+}
+
+.slider-boxes {
+    .slider {
+        margin: 1rem 0;
+        .ul-slider {
+            li {
+                margin: 0 0.5rem;
+            }
+        }
+    }
+    
+}

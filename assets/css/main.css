@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+.uk-navbar-left h4 {
+  margin: 0 15px;
+}
+
+.navbar {
+  margin: 0 !important;
+}
+
+.li__special {
+  margin: 1rem 0;
+}
+
+.li__special .uk-button-default {
+  color: white !important;
+  font-weight: 600;
+  background-color: #B22323 !important;
+}
+
+.banner {
+  background: url("../img/bgBanner.png") center;
+  background-size: cover;
+}
+
+.banner__judul {
+  padding: 4rem 4rem 7rem 4rem;
+  color: white;
+}
+
+.steps .flex {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.steps .flex figcaption h5 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.steps .flex figcaption p {
+  padding: 0 1.5rem;
+}
+
+.card-boxes .flex-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.card-boxes .flex-card h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card-boxes .flex-card figure {
+  padding: 0 2rem;
+}
+
+.card-boxes .flex-card figure figcaption h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.slider-boxes .slider {
+  margin: 1rem 0;
+}
+
+.slider-boxes .slider .ul-slider li {
+  margin: 0 0.5rem;
+}
+
+.uk-active {
+  text-align: center;
+}
+
+.uk-active .guest__avatar {
+  width: 50%;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.uk-active h3 {
+  margin: 1rem 0;
+}
+
+.uk-search-default {
+  width: 100% !important;
+}
+/*# sourceMappingURL=main.css.map */

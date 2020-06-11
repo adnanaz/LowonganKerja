@@ -1,0 +1,27 @@
+$primary-color :black;
+$secondary-color: white;
+$danger-color: #B22323;
+$btn-color-red :#B22323;
+$btn-color-blue :#0088FF;
+
+//global style
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+ul , li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+//transisiton effect
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+  }
