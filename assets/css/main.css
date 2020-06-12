@@ -81,7 +81,69 @@ body {
 }
 
 .slider-boxes .slider .ul-slider li {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 4rem 0.5rem;
+}
+
+.slider-boxes .slider .ul-slider li .uk-card-body {
+  display: flow-root;
+  padding: 30px 30px;
+  min-height: 450px;
+}
+
+.slider-boxes .slider .ul-slider li .uk-card-body .imgSliderLowker {
+  width: 147.3px;
+  height: 147.3px;
+}
+
+.flex-footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #333;
+  color: white;
+}
+
+.flex-footer ul {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.flex-footer ul li > a {
+  color: white;
+}
+
+.flex-footer ul .header {
+  font-weight: 600;
+}
+
+.flex-footer .special {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-footer .social {
+  margin: 1rem 0;
+}
+
+.flex-footer .social a {
+  margin: 0 .5rem;
+}
+
+.flex-footer .social .social__img {
+  width: 5vh;
+}
+
+.flex-footer .social .social__img--special {
+  width: 47.14px;
+}
+
+@media screen and (min-width: 320px) {
+  .banner__judul {
+    padding: 2rem 2rem 5rem 2rem;
+    font-size: 1.8rem;
+  }
+  .uk-card-body {
+    padding: 30px 0 !important;
+  }
 }
 
 .uk-active {
