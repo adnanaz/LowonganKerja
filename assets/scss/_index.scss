@@ -1,8 +1,28 @@
+.uk-navbar-container:not(.uk-navbar-transparent) {
+	background: #f8f8f8;
+	height: 80px;
+}
+
 .uk-navbar-left {
     h4 {
         margin: 0 15px;
         
     }
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+font-size: 1rem !important;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    color: $btn-color-blue !important;
+}
+
+.uk-navbar-nav>li>a {
+    color: $primary-color !important;
+    text-transform: capitalize !important;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
 }
 
 .navbar {
@@ -20,8 +40,12 @@
 }
 
 .banner {
-    background: url('../img/bgBanner.png') center;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bgBanner.png') center top;
     background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 
     &__judul {
         
@@ -34,9 +58,18 @@
 
     .flex {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         text-align: center;
 
+        figure {
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 1rem;
+
+            img {
+                margin: 1rem 0;
+            }
+        }
 
         figcaption {
             h5 {
@@ -45,6 +78,7 @@
             }
 
             p {
+                margin-bottom: 2rem;
                 padding: 0 1.5rem;
             }
            
@@ -55,7 +89,7 @@
 .card-boxes {
     .flex-card {
        
- 
+        margin: 1rem;
 
         -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
         -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -68,6 +102,8 @@
 
    figure {
        padding: 0 2rem;
+
+
        figcaption {
         h1 {
             font-size: 1.5rem;
@@ -86,12 +122,15 @@
         margin: 1rem 0;
         .ul-slider {
             li {
-                margin: 0 0.5rem 4rem 0.5rem;
+                margin: .5rem 1rem 4rem 1rem;
 
                 .uk-card-body {
                     display: flow-root;
                     padding: 30px 30px;
-                    min-height: 450px;
+                    margin: 1rem;
+                    min-height: 550px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+                
 
                     .imgSliderLowker {
                         width: 147.3px;
@@ -102,6 +141,10 @@
         }
     }
     
+}
+
+.testimoniul {
+    height: 350px;
 }
 
 .flex-footer {
@@ -144,14 +187,195 @@
     }
 }
 
+
 @include media-xs {
     .banner__judul {
-        padding: 2rem 2rem 5rem 2rem;
+        padding: 2rem 2rem 4rem 2rem;
         font-size: 1.8rem;
     }
 
-    .uk-card-body {
-        padding: 30px 0 !important;
+    .uk-navbar-nav {
+        display: none !important;
     }
+
+
+.steps {
+
+    .flex {
+
+
+        figure {
+            img {
+                width: 15vh;
+            }
+        }
+
+    }
+}
     
 }
+
+@include media-s {
+    .banner__judul {
+        padding: 5rem 3rem 6rem 3rem;
+    }
+
+    .steps {
+        .flex {
+            figure {
+                margin: 2rem;
+            }
+        }
+    }  
+    
+    .card-boxes .flex-card {
+        margin: 2rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+    }
+
+    .slider-boxes .slider .ul-slider li .uk-card-body {
+        margin: 2rem;
+    }
+}
+
+@include media-md {
+    .banner__judul {
+        padding: 7rem 3rem 8rem 3rem;
+    }
+}
+
+@include media-m {
+    .uk-navbar-nav {
+        display: flex !important;
+
+
+    }
+
+    .banner__judul {
+        padding: 9rem 3rem 8rem 3rem;
+    }
+
+    .slider-boxes .slider .ul-slider li .uk-card-body {
+        margin: 1rem;
+    }
+
+    .steps {
+
+        .flex {
+
+            flex-flow: row wrap;
+            justify-content: center;
+    
+            figure {
+                margin: 1rem;
+                width: 250px;
+                img {
+                    width: 15vh;
+                }
+            }
+    
+        }
+    } 
+}
+
+
+@include media-lg {
+
+
+    .banner__judul {
+        padding: 11rem 4rem 11rem 4rem;
+    }
+
+    .steps {
+
+        .flex {
+
+            flex-flow: row wrap;
+            justify-content: center;
+    
+            figure {
+                margin: 1rem;
+                width: 320px;
+                img {
+                    width: 15vh;
+                }
+            }
+    
+        }
+    } 
+    
+    .card-boxes .flex-card {
+        margin: 3rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+    }
+
+    .slider-boxes .slider .ul-slider li .uk-card-body {
+        margin: 1rem;
+    }
+
+    .testimoniul {
+        min-height: 250px !important;
+    }
+}
+
+@include media-l {
+    .banner__judul {
+        padding: 15rem 4rem;
+    }
+
+    .steps {
+
+        .flex {
+
+            flex-flow: row;
+    
+            figure {
+                margin: 1rem;
+                width: 350px;
+                img {
+                    width: 17vh;
+                }
+            }
+    
+        }
+    }
+}
+
+
+@include media-xl {
+    .banner__judul {
+        padding: 15rem 4rem;
+    }
+
+    .steps {
+
+        .flex {
+
+            flex-flow: row;
+    
+            figure {
+                margin: 1rem;
+                width: 350px;
+                img {
+                    width: 17vh;
+                }
+            }
+    
+        }
+    }
+}
+
+@include media-xl {
+    .banner__judul {
+        padding: 13rem 4rem;
+        font-size: 3.5rem;
+    }
+
+    .testimoniul {
+        min-height: 250px !important;
+    }
+}
+
+
