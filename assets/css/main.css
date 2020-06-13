@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
@@ -34,7 +35,9 @@ body {
 .uk-navbar-nav > li > a {
   color: black !important;
   text-transform: capitalize !important;
+  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+  -webkit-transition-property: color,background-color;
   transition-property: color,background-color;
 }
 
@@ -81,13 +84,19 @@ body {
 }
 
 .steps .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   text-align: center;
 }
 
 .steps .flex figure {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin: 1rem;
 }
 
@@ -107,6 +116,7 @@ body {
 
 .card-boxes .flex-card {
   margin: 1rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
@@ -138,7 +148,8 @@ body {
   padding: 30px 30px;
   margin: 1rem;
   min-height: 550px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .slider-boxes .slider .ul-slider li .uk-card-body .imgSliderLowker {
@@ -151,8 +162,13 @@ body {
 }
 
 .flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   background-color: #333;
   color: white;
 }
@@ -212,7 +228,9 @@ body {
     width: 15vh;
   }
   .flex-footer {
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -225,7 +243,8 @@ body {
   }
   .card-boxes .flex-card {
     margin: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -246,6 +265,8 @@ body {
 
 @media screen and (min-width: 640px) {
   .uk-navbar-nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   .banner__judul {
@@ -278,8 +299,13 @@ body {
     padding: 0 1rem !important;
   }
   .card__flex .card__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   .card__flex figure img {
     width: 13vh;
@@ -295,8 +321,13 @@ body {
     margin: 1rem;
   }
   .steps .flex {
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -312,8 +343,13 @@ body {
     padding: 11rem 4rem 11rem 4rem;
   }
   .steps .flex {
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -324,7 +360,8 @@ body {
   }
   .card-boxes .flex-card {
     margin: 3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -334,7 +371,9 @@ body {
     min-height: 250px !important;
   }
   .flex-footer {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -357,7 +396,10 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -388,7 +430,10 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -398,7 +443,8 @@ body {
     width: 17vh;
   }
   .card-boxes .flex-card {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin: 1rem;
     padding: 1rem;
   }
@@ -408,8 +454,13 @@ body {
   }
   .card-boxes .flex-card figure {
     padding: 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
   }
   .card-boxes .flex-card figure figcaption {
     padding: 0 1rem;
@@ -469,7 +520,9 @@ body {
 }
 
 .uk-tab > * {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   padding-left: 20px;
   position: relative;
   margin: .5rem;
@@ -480,9 +533,16 @@ body {
 }
 
 .sidebar__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .sidebar__card .sidebar__caption ul {
@@ -499,5 +559,35 @@ body {
 .sidebar__card .sidebar__caption ul button:hover {
   background-color: #B22323;
   color: white;
+}
+
+.cardprofilesiswa {
+  padding: 3rem !important;
+}
+
+.judulfav {
+  color: red;
+}
+
+.slider-profile .button-tarik {
+  background-color: #0088FF;
+  color: white;
+  font-weight: bold;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.judul-fav {
+  margin: 1rem 0 -1rem 3rem;
+  font-weight: bold;
+}
+
+.bantuan-siswa {
+  padding: 2rem;
+}
+
+.gambar-bantuan {
+  max-width: 512px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
