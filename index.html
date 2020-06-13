@@ -19,11 +19,24 @@
                     <h4> <strong>Lowker Webs</strong></h4>
                 </a>
             </div>
+
             <div class="uk-navbar-right">
-                <a class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-flip" href="javascript:void();">
-                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
-                </a>
+                <div class="hide__xl uk-hidden@s">
+                    <a class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-flip"
+                        href="javascript:void();">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Beranda</a></li>
+                    <li><a href="#">Pembelajaran</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                </ul>
             </div>
+
+
 
 
             <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
@@ -83,8 +96,8 @@
 
     <main>
         <section class="banner uk-text-center">
-            <h1 class="banner__judul">Search and hire
-                talented independent
+            <h1 class="banner__judul">Search and Hire
+                Talented Independent
                 Professionals</h1>
         </section>
 
@@ -94,30 +107,21 @@
                     <img src="assets/img/searchjob.svg" alt="search a job image">
                     <figcaption>
                         <h5 class="special">Search a Job</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries,</p>
+                        <p>Cari Pekerjaanmu Di CariKerja.com dan dapatkan gaji terbaik</p>
                     </figcaption>
                 </figure>
                 <figure class="uk-card uk-card-hover uk-card-body">
                     <img src="assets/img/graduation.svg" alt="Study Image">
                     <figcaption>
                         <h5>Study</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries,</p>
+                        <p>Konsultasikan informasi studi diluar negeri dengan mudah dan cepat</p>
                     </figcaption>
                 </figure>
                 <figure class="uk-card uk-card-hover uk-card-body">
                     <img src="assets/img/perusahaan.svg" alt="Perusahaan Image">
                     <figcaption>
                         <h5>Perusahaan Company</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries,</p>
+                        <p>Penjelasan singkat tentang CariKerja.com</p>
                     </figcaption>
                 </figure>
             </div>
@@ -143,9 +147,9 @@
         <section class="slider-boxes">
             <div class="slider uk-text-center">
                 <h3>Lowongan Kerja Terbaru</h3>
-                <div class="uk-position-relative uk-visible-toggle uk-dark uk-margin-medium-top" tabindex="-1"
-                    uk-slider="autoplay: false; infinite: true; autoplay-interval : 3000;">
-                    <ul class="ul-slider uk-slider-items uk-child-width-1-1@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-text-center"
+                <div class="uk-position-relative uk-visible-toggle uk-dark " tabindex="-1"
+                    uk-slider="autoplay: true; infinite: true; autoplay-interval : 3000;">
+                    <ul class="ul-slider uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-text-center"
                         uk-scrollspy="cls: uk-animation-slide-top; target: .uk-card; delay: 100; repeat: true">
                         <li>
                             <div
@@ -218,9 +222,10 @@
             </div>
         </section>
 
-        <div class="section testimonial">
+        <section class=" testimonial">
             <div class="testimoni uk-position-relative uk-visible-toggle uk-light uk-margin-medium-top" tabindex="-1"
-                uk-slideshow="animation: shake;" style="color: black;">
+                uk-slideshow="autoplay: true; infinite: true; autoplay-interval : 5000; animation: shake;"
+                style="color: black;">
 
 
                 <ul class="testimoniul uk-slideshow-items uk-text-center">
@@ -252,7 +257,7 @@
 
 
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
