@@ -54,6 +54,22 @@ font-size: 1rem !important;
     }
 }
 
+.bg1 {
+    background-image: url("../img/bg1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.bg2 {
+    background-image: url("../img/bg2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+  }
+
+
+
 .steps {
 
     .flex {
@@ -148,6 +164,7 @@ font-size: 1rem !important;
 }
 
 .flex-footer {
+  
     display: flex;
     flex-flow: row wrap;
     background-color: #333;
@@ -164,27 +181,35 @@ font-size: 1rem !important;
         }
     }
 
+}
+
+.flex-footer-2 {
+    background-color: #333;
+    color: white;
     .special {
+        margin: 0 auto;
+        text-align: center;
+
+
+            padding-left: 0 !important;
+
+     }
  
-       margin: 0 auto;
-       text-align: center;
-    }
-
-    .social {
-        margin: 1rem 0;
-
-        a {
-            margin: 0 .5rem;
-        }
-
-        .social__img {
-            width: 5vh;
-        }
-
-        .social__img--special {
-            width: 47.14px;
-        }
-    }
+     .social {
+         margin: 1rem 0;
+ 
+         a {
+             margin: 0 .5rem;
+         }
+ 
+         .social__img {
+             width: 5vh;
+         }
+ 
+         .social__img--special {
+             width: 47.14px;
+         }
+     }
 }
 
 
@@ -195,6 +220,10 @@ font-size: 1rem !important;
     }
 
     .uk-navbar-nav {
+        display: none !important;
+    }
+
+    .uk-panel, .loginas {
         display: none !important;
     }
 
@@ -211,6 +240,10 @@ font-size: 1rem !important;
         }
 
     }
+}
+
+.flex-footer {
+    justify-content: start;
 }
     
 }
@@ -237,6 +270,13 @@ font-size: 1rem !important;
     .slider-boxes .slider .ul-slider li .uk-card-body {
         margin: 2rem;
     }
+
+    .bg3 {
+        background-image: url("../img/bg3.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
 }
 
 @include media-md {
@@ -248,13 +288,69 @@ font-size: 1rem !important;
 @include media-m {
     .uk-navbar-nav {
         display: flex !important;
-
-
     }
-
+    
     .banner__judul {
-        padding: 9rem 3rem 8rem 3rem;
+        padding: 5rem 2rem 0;
     }
+
+    .uk-panel {
+        display: flow-root !important;
+    }
+
+    .loginas {
+        display: block !important;
+    }
+
+    .uk-placeholder {
+        margin-bottom: 20px;
+        padding: 0 !important; 
+        background: 0 0 !important; 
+        border: none !important;
+    }
+
+    .loginas {
+        padding-bottom: 2rem;
+        h3 {
+            color: white;
+        }
+
+        button {
+            margin: 0 1rem;
+        }
+
+        .btn__banner {
+            width: 150px;
+            text-align: center;
+            padding: 0 1rem !important;
+        }
+    }
+
+    .card__flex {
+
+        .card__items {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        figure {
+            img {
+                width: 13vh;
+            }
+        }
+
+        .caption {
+            text-align: left;
+
+            ul {
+                li {
+                    color: $primary-color;
+                    margin: .5rem 0;
+                }
+            }
+        }
+    }
+    
 
     .slider-boxes .slider .ul-slider li .uk-card-body {
         margin: 1rem;
@@ -281,8 +377,6 @@ font-size: 1rem !important;
 
 
 @include media-lg {
-
-
     .banner__judul {
         padding: 11rem 4rem 11rem 4rem;
     }
@@ -303,6 +397,7 @@ font-size: 1rem !important;
             }
     
         }
+        
     } 
     
     .card-boxes .flex-card {
@@ -318,11 +413,32 @@ font-size: 1rem !important;
     .testimoniul {
         min-height: 250px !important;
     }
+
+    .flex-footer {
+        justify-content: space-between;
+    }
 }
 
 @include media-l {
     .banner__judul {
-        padding: 15rem 4rem;
+        padding: 10rem 4rem 0;
+    }
+
+    .loginas {
+        padding-bottom: 5rem;
+        h3 {
+            color: white;
+        }
+
+        button {
+            margin: 0 1rem;
+        }
+
+        .btn__banner {
+            width: 150px;
+            text-align: center;
+            padding: 0 1rem !important;
+        }
     }
 
     .steps {
@@ -346,7 +462,25 @@ font-size: 1rem !important;
 
 @include media-xl {
     .banner__judul {
-        padding: 15rem 4rem;
+        padding: 10rem 10rem 0;
+        font-size: 2rem;
+    }
+
+    .loginas {
+        padding-bottom: 5rem;
+        h3 {
+            color: white;
+        }
+
+        button {
+            margin: 0 1rem;
+        }
+
+        .btn__banner {
+            width: 150px;
+            text-align: center;
+            padding: 0 1rem !important;
+        }
     }
 
     .steps {
@@ -365,12 +499,73 @@ font-size: 1rem !important;
     
         }
     }
+
+    // .card-boxes .flex-card {
+    //     margin: 2rem;
+    //     box-shadow: none;
+    //     padding: 1rem;
+    // }
+
+    .card-boxes {
+        .flex-card {
+        box-shadow: none;
+
+        margin: 1rem;
+        padding: 1rem;
+       h1 {
+           text-align: center;
+           font-size: 1.5rem;
+       }
+    
+       figure {
+           padding: 0 2rem;
+           display: flex;
+           flex-flow: row-reverse; 
+    
+    
+           figcaption {
+               padding: 0 1rem;
+            h1 {
+                width: 60%;
+                text-align: left;
+                font-size: 1.5rem;
+                margin: 1rem 0;
+            }
+
+            p {
+                width: 60%;
+                text-align: left;
+            }
+       }
+    
+      
+       }
+    }
+    
+    }
 }
 
-@include media-xl {
+@include media-lg {
     .banner__judul {
-        padding: 13rem 4rem;
+        padding: 15rem 15rem     0;
         font-size: 3.5rem;
+    }
+
+    .loginas {
+        padding-bottom: 10rem;
+        h3 {
+            color: white;
+        }
+
+        button {
+            margin: 0 1rem;
+        }
+
+        .btn__banner {
+            width: 150px;
+            text-align: center;
+            padding: 0 1rem !important;
+        }
     }
 
     .testimoniul {

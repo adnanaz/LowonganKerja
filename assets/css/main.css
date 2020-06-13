@@ -66,6 +66,20 @@ body {
   color: white;
 }
 
+.bg1 {
+  background-image: url("../img/bg1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg2 {
+  background-image: url("../img/bg2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .steps .flex {
   display: flex;
   flex-flow: column;
@@ -156,24 +170,30 @@ body {
   font-weight: 600;
 }
 
-.flex-footer .special {
-  margin: 0 auto;
-  text-align: center;
+.flex-footer-2 {
+  background-color: #333;
+  color: white;
 }
 
-.flex-footer .social {
+.flex-footer-2 .special {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0 !important;
+}
+
+.flex-footer-2 .social {
   margin: 1rem 0;
 }
 
-.flex-footer .social a {
+.flex-footer-2 .social a {
   margin: 0 .5rem;
 }
 
-.flex-footer .social .social__img {
+.flex-footer-2 .social .social__img {
   width: 5vh;
 }
 
-.flex-footer .social .social__img--special {
+.flex-footer-2 .social .social__img--special {
   width: 47.14px;
 }
 
@@ -185,8 +205,14 @@ body {
   .uk-navbar-nav {
     display: none !important;
   }
+  .uk-panel, .loginas {
+    display: none !important;
+  }
   .steps .flex figure img {
     width: 15vh;
+  }
+  .flex-footer {
+    justify-content: start;
   }
 }
 
@@ -205,6 +231,11 @@ body {
   .slider-boxes .slider .ul-slider li .uk-card-body {
     margin: 2rem;
   }
+  .bg3 {
+    background-image: url("../img/bg3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -218,7 +249,47 @@ body {
     display: flex !important;
   }
   .banner__judul {
-    padding: 9rem 3rem 8rem 3rem;
+    padding: 5rem 2rem 0;
+  }
+  .uk-panel {
+    display: flow-root !important;
+  }
+  .loginas {
+    display: block !important;
+  }
+  .uk-placeholder {
+    margin-bottom: 20px;
+    padding: 0 !important;
+    background: 0 0 !important;
+    border: none !important;
+  }
+  .loginas {
+    padding-bottom: 2rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
+  }
+  .card__flex .card__items {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card__flex figure img {
+    width: 13vh;
+  }
+  .card__flex .caption {
+    text-align: left;
+  }
+  .card__flex .caption ul li {
+    color: black;
+    margin: .5rem 0;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
     margin: 1rem;
@@ -262,11 +333,28 @@ body {
   .testimoniul {
     min-height: 250px !important;
   }
+  .flex-footer {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .banner__judul {
-    padding: 15rem 4rem;
+    padding: 10rem 4rem 0;
+  }
+  .loginas {
+    padding-bottom: 5rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .steps .flex {
     flex-flow: row;
@@ -282,7 +370,22 @@ body {
 
 @media screen and (min-width: 1024px) {
   .banner__judul {
-    padding: 15rem 4rem;
+    padding: 10rem 10rem 0;
+    font-size: 2rem;
+  }
+  .loginas {
+    padding-bottom: 5rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .steps .flex {
     flex-flow: row;
@@ -294,12 +397,53 @@ body {
   .steps .flex figure img {
     width: 17vh;
   }
+  .card-boxes .flex-card {
+    box-shadow: none;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .card-boxes .flex-card h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card-boxes .flex-card figure {
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .card-boxes .flex-card figure figcaption {
+    padding: 0 1rem;
+  }
+  .card-boxes .flex-card figure figcaption h1 {
+    width: 60%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .card-boxes .flex-card figure figcaption p {
+    width: 60%;
+    text-align: left;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .banner__judul {
-    padding: 13rem 4rem;
+    padding: 15rem 15rem     0;
     font-size: 3.5rem;
+  }
+  .loginas {
+    padding-bottom: 10rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .testimoniul {
     min-height: 250px !important;
@@ -322,5 +466,38 @@ body {
 
 .uk-search-default {
   width: 100% !important;
+}
+
+.uk-tab > * {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+  margin: .5rem;
+}
+
+.li__tab button {
+  width: 200px;
+}
+
+.sidebar__card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+}
+
+.sidebar__card .sidebar__caption ul {
+  color: black;
+  text-align: left;
+}
+
+.sidebar__card .sidebar__caption ul button {
+  margin-top: .1rem;
+  background-color: #0088FF;
+  color: white;
+}
+
+.sidebar__card .sidebar__caption ul button:hover {
+  background-color: #B22323;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
