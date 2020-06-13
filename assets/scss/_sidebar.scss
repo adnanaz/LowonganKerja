@@ -15,3 +15,41 @@
     width: 100% !important;
 }
 
+
+.uk-tab > * {
+	flex: none;
+	padding-left: 20px;
+	position: relative;
+	margin: .5rem;
+
+}
+
+.li__tab {
+   button {
+    width: 200px;
+   }
+}
+
+.sidebar__card {
+display: flex;
+flex-flow: column wrap;
+justify-content: start;
+
+    .sidebar__caption {
+        ul {
+            color: $primary-color;
+            text-align: left;
+
+         button {
+             margin-top: .1rem;
+             background-color: $btn-color-blue;
+             color: $secondary-color;
+         }
+         button:hover {
+             background-color: $btn-color-red;
+             color: $secondary-color;
+         }
+        }
+    }
+}
+

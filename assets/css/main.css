@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
@@ -35,9 +34,7 @@ body {
 .uk-navbar-nav > li > a {
   color: black !important;
   text-transform: capitalize !important;
-  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
-  -webkit-transition-property: color,background-color;
   transition-property: color,background-color;
 }
 
@@ -69,20 +66,28 @@ body {
   color: white;
 }
 
+.bg1 {
+  background-image: url("../img/bg1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg2 {
+  background-image: url("../img/bg2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .steps .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   text-align: center;
 }
 
 .steps .flex figure {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin: 1rem;
 }
 
@@ -102,7 +107,6 @@ body {
 
 .card-boxes .flex-card {
   margin: 1rem;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
@@ -134,8 +138,7 @@ body {
   padding: 30px 30px;
   margin: 1rem;
   min-height: 550px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .slider-boxes .slider .ul-slider li .uk-card-body .imgSliderLowker {
@@ -148,13 +151,8 @@ body {
 }
 
 .flex-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   background-color: #333;
   color: white;
 }
@@ -172,24 +170,30 @@ body {
   font-weight: 600;
 }
 
-.flex-footer .special {
-  margin: 0 auto;
-  text-align: center;
+.flex-footer-2 {
+  background-color: #333;
+  color: white;
 }
 
-.flex-footer .social {
+.flex-footer-2 .special {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0 !important;
+}
+
+.flex-footer-2 .social {
   margin: 1rem 0;
 }
 
-.flex-footer .social a {
+.flex-footer-2 .social a {
   margin: 0 .5rem;
 }
 
-.flex-footer .social .social__img {
+.flex-footer-2 .social .social__img {
   width: 5vh;
 }
 
-.flex-footer .social .social__img--special {
+.flex-footer-2 .social .social__img--special {
   width: 47.14px;
 }
 
@@ -201,8 +205,14 @@ body {
   .uk-navbar-nav {
     display: none !important;
   }
+  .uk-panel, .loginas {
+    display: none !important;
+  }
   .steps .flex figure img {
     width: 15vh;
+  }
+  .flex-footer {
+    justify-content: start;
   }
 }
 
@@ -215,12 +225,16 @@ body {
   }
   .card-boxes .flex-card {
     margin: 2rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
     margin: 2rem;
+  }
+  .bg3 {
+    background-image: url("../img/bg3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -232,24 +246,57 @@ body {
 
 @media screen and (min-width: 640px) {
   .uk-navbar-nav {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
   .banner__judul {
-    padding: 9rem 3rem 8rem 3rem;
+    padding: 5rem 2rem 0;
+  }
+  .uk-panel {
+    display: flow-root !important;
+  }
+  .loginas {
+    display: block !important;
+  }
+  .uk-placeholder {
+    margin-bottom: 20px;
+    padding: 0 !important;
+    background: 0 0 !important;
+    border: none !important;
+  }
+  .loginas {
+    padding-bottom: 2rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
+  }
+  .card__flex .card__items {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card__flex figure img {
+    width: 13vh;
+  }
+  .card__flex .caption {
+    text-align: left;
+  }
+  .card__flex .caption ul li {
+    color: black;
+    margin: .5rem 0;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
     margin: 1rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -265,13 +312,8 @@ body {
     padding: 11rem 4rem 11rem 4rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -282,8 +324,7 @@ body {
   }
   .card-boxes .flex-card {
     margin: 3rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -292,17 +333,31 @@ body {
   .testimoniul {
     min-height: 250px !important;
   }
+  .flex-footer {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .banner__judul {
-    padding: 15rem 4rem;
+    padding: 10rem 4rem 0;
+  }
+  .loginas {
+    padding-bottom: 5rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -315,13 +370,25 @@ body {
 
 @media screen and (min-width: 1024px) {
   .banner__judul {
-    padding: 15rem 4rem;
+    padding: 10rem 10rem 0;
+    font-size: 2rem;
+  }
+  .loginas {
+    padding-bottom: 5rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -330,12 +397,53 @@ body {
   .steps .flex figure img {
     width: 17vh;
   }
+  .card-boxes .flex-card {
+    box-shadow: none;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .card-boxes .flex-card h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card-boxes .flex-card figure {
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .card-boxes .flex-card figure figcaption {
+    padding: 0 1rem;
+  }
+  .card-boxes .flex-card figure figcaption h1 {
+    width: 60%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .card-boxes .flex-card figure figcaption p {
+    width: 60%;
+    text-align: left;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .banner__judul {
-    padding: 13rem 4rem;
+    padding: 15rem 15rem     0;
     font-size: 3.5rem;
+  }
+  .loginas {
+    padding-bottom: 10rem;
+  }
+  .loginas h3 {
+    color: white;
+  }
+  .loginas button {
+    margin: 0 1rem;
+  }
+  .loginas .btn__banner {
+    width: 150px;
+    text-align: center;
+    padding: 0 1rem !important;
   }
   .testimoniul {
     min-height: 250px !important;
@@ -360,33 +468,36 @@ body {
   width: 100% !important;
 }
 
-.cardprofilesiswa {
-  padding: 3rem !important;
+.uk-tab > * {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+  margin: .5rem;
 }
 
-.judulfav {
-  color: red;
+.li__tab button {
+  width: 200px;
 }
 
-.slider-profile .button-tarik {
+.sidebar__card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+}
+
+.sidebar__card .sidebar__caption ul {
+  color: black;
+  text-align: left;
+}
+
+.sidebar__card .sidebar__caption ul button {
+  margin-top: .1rem;
   background-color: #0088FF;
   color: white;
-  font-weight: bold;
-  border-bottom-right-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
 }
 
-.judul-fav {
-  margin: 1rem 0 -1rem 3rem;
-  font-weight: bold;
-}
-
-.bantuan-siswa {
-  padding: 2rem;
-}
-
-.gambar-bantuan {
-  max-width: 512px;
-  margin: 0 auto;
+.sidebar__card .sidebar__caption ul button:hover {
+  background-color: #B22323;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
