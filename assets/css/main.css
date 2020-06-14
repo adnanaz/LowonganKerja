@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
@@ -35,9 +34,7 @@ body {
 .uk-navbar-nav > li > a {
   color: black !important;
   text-transform: capitalize !important;
-  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
-  -webkit-transition-property: color,background-color;
   transition-property: color,background-color;
 }
 
@@ -84,19 +81,13 @@ body {
 }
 
 .steps .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   text-align: center;
 }
 
 .steps .flex figure {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin: 1rem;
 }
 
@@ -116,7 +107,6 @@ body {
 
 .card-boxes .flex-card {
   margin: 1rem;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
@@ -148,8 +138,7 @@ body {
   padding: 30px 30px;
   margin: 1rem;
   min-height: 550px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .slider-boxes .slider .ul-slider li .uk-card-body .imgSliderLowker {
@@ -162,13 +151,8 @@ body {
 }
 
 .flex-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   background-color: #333;
   color: white;
 }
@@ -228,9 +212,7 @@ body {
     width: 15vh;
   }
   .flex-footer {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    justify-content: start;
   }
 }
 
@@ -243,8 +225,7 @@ body {
   }
   .card-boxes .flex-card {
     margin: 2rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -265,8 +246,6 @@ body {
 
 @media screen and (min-width: 640px) {
   .uk-navbar-nav {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
   .banner__judul {
@@ -299,13 +278,8 @@ body {
     padding: 0 1rem !important;
   }
   .card__flex .card__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
   .card__flex figure img {
     width: 13vh;
@@ -321,13 +295,8 @@ body {
     margin: 1rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -343,13 +312,8 @@ body {
     padding: 11rem 4rem 11rem 4rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -360,8 +324,7 @@ body {
   }
   .card-boxes .flex-card {
     margin: 3rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -371,9 +334,7 @@ body {
     min-height: 250px !important;
   }
   .flex-footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -396,10 +357,7 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -430,10 +388,7 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -443,8 +398,7 @@ body {
     width: 17vh;
   }
   .card-boxes .flex-card {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     margin: 1rem;
     padding: 1rem;
   }
@@ -454,13 +408,8 @@ body {
   }
   .card-boxes .flex-card figure {
     padding: 0 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse;
-            flex-flow: row-reverse;
+    flex-flow: row-reverse;
   }
   .card-boxes .flex-card figure figcaption {
     padding: 0 1rem;
@@ -520,9 +469,7 @@ body {
 }
 
 .uk-tab > * {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   padding-left: 20px;
   position: relative;
   margin: .5rem;
@@ -533,16 +480,9 @@ body {
 }
 
 .sidebar__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  flex-flow: column wrap;
+  justify-content: start;
 }
 
 .sidebar__card .sidebar__caption ul {
@@ -589,5 +529,157 @@ body {
 .gambar-bantuan {
   max-width: 512px;
   margin: 0 auto;
+}
+
+.bannerCompany__banner {
+  height: 100%;
+  width: 100%;
+}
+
+.bannerCompany__banner img {
+  max-height: 450px;
+}
+
+.bannerCompany__profile {
+  text-align: center;
+  width: 100%;
+}
+
+.bannerCompany__profile img {
+  border-radius: 50%;
+  max-width: 225px;
+  max-height: 225px;
+}
+
+.contentCard {
+  margin-bottom: 1rem;
+}
+
+.flex__box {
+  display: flex;
+}
+
+.flex__box a {
+  margin-top: -1%;
+  margin-left: 1rem;
+}
+
+.bg__detail {
+  background-image: url("../img/bg-detail.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .bannerCompany__profile {
+    margin-top: -4rem;
+  }
+  .bannerCompany__profile img {
+    width: 10vh;
+  }
+  .box-wrap {
+    text-align: center;
+  }
+  .box-wrap h1 {
+    font-size: 1.5rem;
+  }
+  .box-wrap .box {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+  }
+  .box-wrap .box img {
+    margin-bottom: .5rem;
+  }
+  .box-wrap .box p {
+    margin: 0 1rem;
+  }
+  .stickycard {
+    width: 150px;
+    height: 2em;
+    background-color: #0088FF;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 5px 0 0 22px;
+  }
+  .stickycard h3 {
+    color: white;
+    line-height: 1;
+  }
+  .company__card {
+    padding: 0 !important;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  .company__card .box__wrap {
+    padding: 1rem;
+  }
+  .company__card ul {
+    padding-left: 0;
+  }
+  .company__card ul li {
+    margin: 1rem 0;
+  }
+  .company__card .uk-background-primary {
+    color: white;
+  }
+  .company__card .uk-background-primary h3 {
+    color: white;
+  }
+  .company__card .btn__lamar {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .company__card .company__title {
+    margin: 1rem;
+  }
+  .company__card .company__logo {
+    margin-bottom: 1rem;
+  }
+  .company__card p {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .company__card
+.box__wrap {
+    padding: 2rem;
+  }
+  .box {
+    display: flex;
+    flex-flow: row wrap !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bannerCompany__profile {
+    margin-top: -6rem;
+  }
+  .bannerCompany__profile img {
+    width: 15vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bannerCompany__profile {
+    margin-top: -7rem;
+  }
+  .bannerCompany__profile img {
+    width: 20vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .bannerCompany__profile {
+    margin-top: -8rem;
+  }
+  .bannerCompany__profile img {
+    width: 25vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
