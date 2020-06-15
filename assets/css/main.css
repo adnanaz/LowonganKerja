@@ -531,57 +531,6 @@ body {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.tombol-upload {
-  cursor: pointer;
-  padding: 0.6rem;
-  background-color: #0088ff;
-  color: white;
-}
-
-.judul-form {
-  color: #BFFFFF !important;
-  height: 42px;
-  text-align: middle;
-  margin: 2px 0 0 2px;
-  padding: 9px 0 0 9px;
-  margin-top: 3rem;
-}
-
-.label-radio label {
-  line-height: 45px;
-}
-
-.input-kode {
-  width: 6rem !important;
-}
-
-.keterangan-video {
-  font-size: 14px;
-}
-
-.p-code {
-  padding-top: 8px;
-}
-
-.tabel-td {
-  text-align: initial;
-}
-
-.tabel-biodata tr td {
-  line-height: 2rem;
-}
-
-.ul-biodata li {
-  margin: 1.5rem 0 1.5rem 0;
-  text-align: left;
-}
-
-@media screen and (min-width: 320px) {
-  .tombol-rekruitment {
-    width: 10rem !important;
-    margin-bottom: 1rem !important;
-=======
 .bannerCompany__banner {
   height: 100%;
   width: 100%;
@@ -731,7 +680,6 @@ body {
   }
   .bannerCompany__profile img {
     width: 25vh;
->>>>>>> a31f787ae1689c6b41c1c2b532a83a84d67009c8
   }
 }
 /*# sourceMappingURL=main.css.map */
