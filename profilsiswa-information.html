@@ -111,10 +111,341 @@
     </header>
 
     <main>
+       
+        <div class="slider-profile">
+            
+            <button class="uk-button uk-button-default uk-margin-small-right button-tarik" type="button" uk-toggle="target: #offcanvas-slide"
+            >Tarik</button>
+            <div id="offcanvas-slide" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar"  style="background: #1e87f0;">
+            
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
 
+                    <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
+                    <img class="uk-align-center" src="assets/img/imgprofilesiswa.svg" alt="">
+                    <h3 class="uk-text-bold uk-text-center" style="color: white;">Annisa Kumalasari</h3>
+                    <p class="uk-text-center uk-margin-large-bottom" style="color: white;">0812-3456-789</p>
+
+                    <div class="uk-margin-medium-left">
+                       <a href=""> <button class="uk-button uk-button-text uk-margin-medium-bottom">
+                            <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/logoprofil#1.png" alt="">Information</h4> 
+                        </button></a>
+                        <br>
+                        <a href="">
+                   <button class="uk-button uk-button-text uk-margin-medium-bottom">
+                    <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/logoprofil#2.png" alt="">Favorite</h4></button></a>
+                    <a href="">
+                     <button class="uk-button uk-button-text uk-margin-medium-bottom">
+                    <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/logoprofil#3.png" alt="">Pasang Tawaran</h4></button></a>
+                    <a href="">
+                     <button class="uk-button uk-button-text">
+                    <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/logoprofil#4.png" alt="">Bantuan</h4></button></a>
+
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <a href="">
+                     <button class="uk-button uk-button-text">
+                    <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/logoprofil#5.png" alt="">Exit</h4></button></a>
+                  
+
+                </div>
+            </div>
+        </div>
+       
        <section>
+
+
         <div class="information-siswa">
 
+            <div class="uk-width-expand@m uk-padding-large  uk-margin"> 
+                <h1 class=" uk-margin-medium-bottom uk-text-bold ">Pasang Tawaran</h1>
+                <div class="uk-background-primary uk-width-1-1 uk-text-bold">
+                    <p class="judul-form">Profil Tawaran</p></div>
+                    <p>CODE</p>
+                    <form>
+                        <div class="uk-grid uk-margin-small-left">
+                        <input class="uk-input input-kode uk-width-1-6" type="text" placeholder=""><p class="p-code">( Otomatis Terisi )</p>
+                        </div>
+                        <p>Nama Panjang</p>
+                        <input class="uk-input uk-width-1-1" style="width: 517px" type="text" placeholder="">
+                        <p>No Telepon/No Whatsapp</p>
+                        <input class="uk-input uk-width-1-1" style="width: 517px" type="text" placeholder="">
+                        <p>Tempat, Tanggal Lahir</p>
+                        <input class="uk-input uk-width-1-1" style="width: 517px" type="text" placeholder="">
+                        
+                    
+                    <p>Jenis Kelamin</p>
+
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio6" checked> Pria</label>
+                        <label><input class="uk-radio" type="radio" name="radio6"> Wanita</label>
+                    </div>
+
+                    <p>Tinggi Badan</p>
+                    <select class="uk-select" style="width:194px">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+
+                    <p>Negara</p>
+                    <select class="uk-select" style="width:194px">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+
+                    <p>Pernikahan</p>
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio7" checked> Belum Menikah</label>
+                        <label><input class="uk-radio" type="radio" name="radio7"> Sudah Menikah</label>
+                    </div>
+
+                    <p>Pendidikan Saat ini</p>
+                    <select class="uk-select" style="width:194px">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+
+                        <p>Foto Anda</p>
+
+                        
+                        <p><img id="output" src="assets/img/uploadimage.png" width="140" /></p>
+                                <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+                                <label class="tombol-upload" for="file" >Upload Image</label>
+                                
+                                
+                                <script>
+                                var loadFile = function(event) {
+                                var image = document.getElementById('output');
+                                image.src = URL.createObjectURL(event.target.files[0]);
+                                };
+                                </script>
+
+                                <p>Pilih Bahasa Video Profil</p>
+                                <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-radio" type="radio" name="radio20" checked> Bahasa Jepang</label>
+                                    <label><input class="uk-radio" type="radio" name="radio20"> Bahasa Inggris</label>
+                                    <label><input class="uk-radio" type="radio" name="radio20"> Lainnya</label>
+                                </div>
+
+
+                                <p>Video Profil Anda</p>
+
+                                <p><img id="output" src="assets/img/uploadvideo.png" width="150" /></p>
+                                <input type="file"  accept="image/*" name="video" id="file"  onchange="loadFile(event)" style="display: none;">
+                                <p class="keterangan-video">*Maximal video durasi 3 menit</p>
+                                <p><label class="tombol-upload" for="file" style="cursor: pointer;">Upload Video</label></p>
+                                
+                                
+                                <script>
+                                var loadFile = function(event) {
+                                var video = document.getElementById('output');
+                                video.src = URL.createObjectURL(event.target.files[0]);
+                                };
+                                </script>
+
+                                <p>Hobi Yang Anda Sukai</p>
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder=""></textarea>
+                                </div>
+
+                                <p>Profesi</p>
+                                <select class="uk-select" style="width:194px">
+                                        <option>Wiraswasta</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                </select>
+
+                                <p>Agama</p>
+                                <select class="uk-select" style="width:194px">
+                                        <option>Islam</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                </select>
+
+
+
+      
+        
+                <div class="uk-background-primary uk-width-1-1 uk-text-bold">
+                    <p class="judul-form"> Profil Kemampuan</p></div>
+                
+
+                <p>Pilih Visa</p>
+                    <select class="uk-select" style="width:194px">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+
+                     <p>Pekerjaan yang Di inginkan</p>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio8" checked> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Hotel</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Restoran</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Penerbangan</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Perikanan</label>
+                    </div>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio8" checked> Kontruksi</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> IT</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Penerjemah</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Industri</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio8"> Lainnya</label>
+                        
+                    </div>
+
+                    <p>Kapan anda bisa bisa kerja?</p>
+                    <select class="uk-select" style="width:194px">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+
+                    <p>Pernah anda bekerja di luar negeri?</p>
+                    <div class="uk-margin  uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio9" checked> Sudah</label>
+                        <label><input class="uk-radio" type="radio" name="radio9">Belum</label>
+                    </div> 
+                    
+
+                    <p>Pengalaman kerja yang pernah anda kerjakan</p>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio10" checked> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Hotel</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Restoran</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Penerbangan</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Perikanan</label>
+                    </div>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio10" checked> Kontruksi</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> IT</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Penerjemah</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Industri</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio10"> Lainnya</label>
+                        
+                    </div>
+
+                    <p>Sertifikat yang anda miliki</p>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio11" checked> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Hotel</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Restoran</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Penerbangan</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Perikanan</label>
+                    </div>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio11" checked> Kontruksi</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> IT</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Penerjemah</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Industri</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Perawatan</label>
+                        <label><input class="uk-radio" type="radio" name="radio11"> Lainnya</label>
+                        
+                    </div>
+
+                    <div class="uk-background-primary uk-width-1-1 uk-text-bold">
+                    <p class="judul-form">Kemampuan Berbahasa</p></div>
+                    <h4 class="uk-margin-medium-top"><strong>Tingkat bicara bahasa inggris anda</strong></h4>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio12" checked> Tidak bisa</label>
+                        <label><input class="uk-radio" type="radio" name="radio12"> Rendah</label>
+                        <label><input class="uk-radio" type="radio" name="radio12"> Biasa</label>
+                        <label><input class="uk-radio" type="radio" name="radio12"> Tinggi</label>
+                        
+                    </div>
+
+                    <h4 class="uk-margin-medium-top"><strong>Tingkat Penulisan bahasa inggris anda</strong></h4>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio13" checked> Tidak bisa</label>
+                        <label><input class="uk-radio" type="radio" name="radio13"> Rendah</label>
+                        <label><input class="uk-radio" type="radio" name="radio13"> Biasa</label>
+                        <label><input class="uk-radio" type="radio" name="radio13"> Tinggi</label>
+                        
+                    </div>
+
+                    <h4 class="uk-margin-medium-top"><strong>Tingkat Bacaan bahasa inggris anda</strong></h4>
+
+                    <div class="uk-margin label-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="radio14" checked> Tidak bisa</label>
+                        <label><input class="uk-radio" type="radio" name="radio14"> Rendah</label>
+                        <label><input class="uk-radio" type="radio" name="radio14"> Biasa</label>
+                        <label><input class="uk-radio" type="radio" name="radio14"> Tinggi</label>
+                        
+                    </div>
+                    
+                    </form>
+                    <a href="#daftarberhasil" uk-toggle><button class="uk-button uk-border-rounded uk-button-primary uk-align-center uk-margin-large-top">Daftar</button></a>
+                
+                
+
+            </div>
+            
+            </div>
+
+        </div>
+
+        <div id="daftarberhasil" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-text-center">
+                        <img  src="assets/img/checklist.svg" alt="">
+                        <h4>Terima Kasih Telah Berpartisipasi,</h4>
+                        <h4>Klik dibawah ini untuk melihat postingan Anda</h4>
+                        <a href=""><h4>Disini</h4></a>
+                    </div>
+
+                    
+            </div>
         </div>
 
       </section>
@@ -123,7 +454,7 @@
       
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="flex-footer">
             <ul>
                 <li class="header"> Perusahaan</li>
@@ -157,7 +488,7 @@
             </ul>
         </div>
 
-    </footer> -->
+    </footer>
 </body>
 <script src="assets/js/uikit.min.js"></script>
 <script src="assets/js/uikit-icons.min.js"></script>
