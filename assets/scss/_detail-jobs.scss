@@ -1,0 +1,196 @@
+.bannerCompany {
+  &__banner {
+    height: 100%;
+    width: 100%;
+     
+
+      img {
+        max-height: 450px;
+      }
+  }
+
+  &__profile {
+      text-align: center; 
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        max-width: 225px;
+        max-height: 225px;
+      }
+
+
+  }
+
+}
+
+.contentCard {
+    margin-bottom: 1rem;
+}
+
+.flex__box {
+    display: flex;
+
+    a {
+        margin-top: -1%;
+        margin-left: 1rem;
+    }
+}
+
+.bg__detail {
+    background-image: url("../img/bg-detail.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+
+
+
+
+
+@include media-xs {
+    .bannerCompany {
+        &__profile {
+            margin-top: -4rem;
+            img {
+                width: 10vh;
+            }
+        }
+    }
+
+    .box-wrap {
+        text-align: center;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+
+        .box {
+           display: flex;
+           flex-flow: column wrap;
+           margin: 1rem 0;
+            
+            img {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin: 0 1rem;
+            }
+            
+        }
+    }
+
+    .stickycard {
+        width:150px;
+        height: 2em;
+        background-color: #0088FF;
+        color: white; 
+        border-top-left-radius:12px;
+        border-top-right-radius: 12px;
+        padding: 5px 0 0 22px;
+
+        h3 {
+            color: white;
+            line-height: 1;
+            
+        }
+    }
+
+    .company__card {
+        padding: 0 !important;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+
+        .box__wrap {
+            padding: 1rem;
+        }
+
+        ul{
+            padding-left: 0;
+
+            li {
+                margin:  1rem 0;
+            }
+        }
+
+        .uk-background-primary {
+            color: white;
+
+            h3 {
+                color: white;
+            }
+        }
+
+        .btn__lamar {
+            text-align: center;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .company__title {
+            margin: 1rem;
+        }
+
+        .company__logo {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            padding-bottom: 1rem;
+        }
+    }
+
+    
+}
+
+@include media-md {
+    .company__card 
+    .box__wrap {
+        padding: 2rem;
+    }
+
+    .box {
+        display: flex;
+        flex-flow: row wrap !important;
+        justify-content: center;
+    }
+}
+
+
+
+@include media-l {
+    .bannerCompany {
+        &__profile {
+            margin-top: -6rem;
+            img {
+                width: 15vh;
+            }
+        }
+    }
+}
+
+
+@include media-xl {
+    .bannerCompany {
+        &__profile {
+            margin-top: -7rem;
+            img {
+                width: 20vh;
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .bannerCompany {
+        &__profile {
+            margin-top: -8rem;
+            img {
+                width: 25vh;
+            }
+        }
+    }
+}
