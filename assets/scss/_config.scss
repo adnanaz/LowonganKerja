@@ -52,7 +52,7 @@ body {
   }
 }
 
-@mixin media-lg {
+@mixin media-xxl {
   @media screen and (min-width: 768px) {
     @content;
   }
