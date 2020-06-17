@@ -709,4 +709,110 @@ body {
     max-width: 20rem !important;
   }
 }
+
+.alljobs__banner {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alljobs__banner img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .alljobs__banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .alljobs__banner h1 {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+  }
+  .alljobs__banner img {
+    width: 100%;
+    max-width: 797.5px;
+    max-height: 495.46px;
+  }
+  .content {
+    padding: 0 1rem;
+  }
+  .content .filter {
+    text-align: center;
+  }
+  .content .flex__boxes h1 {
+    font-size: 1.5rem;
+  }
+  .content .flex__boxes ul {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .flex__boxes ul li {
+    margin: 1rem;
+  }
+  .content .flex__boxes ul li .uk-card-default {
+    height: 563px;
+  }
+  .content .flex__boxes ul li .uk-card-default .img__alljobs {
+    width: auto;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .alljobs__banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .alljobs__banner h1 {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+  }
+  .alljobs__banner img {
+    width: 100%;
+  }
+  .content {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .alljobs h1 {
+    font-size: 1.7rem;
+    padding: 0 .5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .alljobs h1 {
+    font-size: 2.5rem;
+    padding: 0 10rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
