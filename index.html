@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -79,10 +81,11 @@
                         </li>
                         <li class="uk-nav-header uk-text-center">Login As</li>
                         <li class="li__special">
-                            <a class="uk-button uk-button-default" href="javascript:void();">Perusahaan</a>
+                            <a class="uk-button uk-button-default" href="javascript:void(); " uk-toggle="target: #loginperusahaan"  >Perusahaan</a>
                         </li>
                         <li class="li__special">
-                            <a class="btn__siswa uk-button uk-button-default" href="javascript:void();">Siswa</a>
+                            <a class="btn__siswa uk-button uk-button-default" href="javascript:void();"
+                            uk-toggle="target: #loginsiswa">Siswa</a>
                         </li>
                         <li class="uk-nav-divider"></li>
                         <li class="uk-text-center"><small>All Rights Reserved &copy Lowker 2020 | Created by :
@@ -263,7 +266,7 @@
                 Professionals</h1>
             <div class="search uk-margin">
 
-                <div class="boundary-align uk-panel uk-placeholder">
+                <div class="boundary-align uk-panel banner-cari uk-placeholder">
                     <div class="uk-inline-clip">
                         <input id="pencarian" class="uk-input uk-form-width-large uk-light" type="text"
                             placeholder="Find a worker">
@@ -390,8 +393,8 @@
                 <p uk-margin>
                 <div class="loginas">
                     <h3>Login As</h3>
-                    <button class="btn__banner uk-button uk-button-primary">Perusahaan</button>
-                    <button class="btn__banner uk-button uk-button-primary">Siswa</button>
+                    <button class="btn__banner uk-button uk-button-primary" uk-toggle="target: #loginperusahaan" >Perusahaan</button>
+                    <button class="btn__banner uk-button uk-button-primary" uk-toggle="target: #loginsiswa" >Siswa</button>
                 </div>
 
 
@@ -412,14 +415,38 @@
         </section>
 
         <section class="steps">
-            <div class="flex">
-                <figure class="uk-card uk-card-hover uk-card-body">
-                    <img src="assets/img/searchjob.svg" alt="search a job image">
-                    <figcaption>
-                        <h5 class="special">Search a Job</h5>
-                        <p>Cari Pekerjaanmu Di CariKerja.com dan dapatkan gaji terbaik</p>
-                    </figcaption>
-                </figure>
+            <div class="flex" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: false">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0" >
+                        <figure class="uk-card uk-card-hover uk-card-body">
+                            <img src="assets/img/searchjob.svg" alt="search a job image">
+                            <figcaption>
+                                <h5 class="special">Search a Job</h5>
+                                <p>Cari Pekerjaanmu Di CariKerja.com dan dapatkan gaji terbaik</p>
+                            </figcaption>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                                <p>
+                                    <a class="uk-button uk-button-secondary uk-align-center" href="#dalam" uk-toggle>Dalam Negeri</a>
+                                    
+                                    <a class="uk-button uk-button-secondary uk-align-center" href="#luarnegeri" uk-toggle>Luar Negeri</a>
+                                </p>
+                            </div>
+                        </figure>
+                                <!-- <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                    <p>
+                        <a class="uk-button uk-button-secondary uk-align-center" href="#dalam" uk-toggle>Dalam Negeri</a>
+                        
+                        <a class="uk-button uk-button-secondary uk-align-center" href="#luarnegeri" uk-toggle>Luar Negeri</a>
+                    </p>
+                
+                
+               
+               
+               
+               
+               
+               
+                </div> -->
+                </div>
                 <figure class="uk-card uk-card-hover uk-card-body">
                     <img src="assets/img/graduation.svg" alt="Study Image">
                     <figcaption>
@@ -438,7 +465,7 @@
         </section>
 
         <section class="card-boxes bg1">
-            <div class="flex-card box13">
+            <div class="flex-card box13" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                 <h1>(Your Company) Menawarkan anda lebih banyak
                     lowongan Pekerjaan dari berbagai negara</h1>
                 <figure class="uk-text-center">
@@ -451,6 +478,7 @@
                             centuries,</p>
                     </figcaption>
                 </figure>
+            
             </div>
         </section>
 
@@ -593,6 +621,7 @@
         </section>
 
         <section class=" testimonial bg3">
+            <h2 style="font-weight: bold;" class="uk-text-center">Testimonial</h2>
             <div class="testimoni uk-position-relative uk-visible-toggle uk-light uk-margin-medium-top" tabindex="-1"
                 uk-slideshow="autoplay: true; infinite: true; autoplay-interval : 5000; animation: shake;"
                 style="color: black;">
@@ -668,6 +697,434 @@
         </div>
 
     </footer>
+
+    <!-- KHUSUS BAGIAN MODAL -->
+
+    <!-- START MODAL DALAM NEGERI FIX -->
+    <div id="dalam" uk-modal>
+        <div class="uk-modal-dialog modal-kota uk-modal-body" >
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h3 class="uk-text-center">Dalam Negeri</h3>
+
+            <div class="uk-inline-clip" style="width: 16rem;">
+                <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search" style="width: 20%;"></a>
+                <input class="uk-input" placeholder="Cari Kota..." type="text" style="border-radius: 18px;">
+
+        </div>
+
+        <div class="uk-panel panel-kota uk-panel-scrollable uk-align-center uk-text-left">
+            <ul class="uk-list">
+                <li>Ambon</li>
+                <li>Bali</li>
+                <li>Balikpapan</li>
+                <li>Bandung</li>
+                <li>Bangil</li>
+                <li>Banjarmasin</li>
+                <li>Banyuwangi</li>
+                <li>Batang</li>
+                <li>Bengkulu</li>
+                <li>Biak Mokmer</li>
+                <li>Bima</li>
+                <li>Binjai</li>
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- END MODAL DALAM NEGERI FIX -->
+    <!-- ++++++++++++++++++++++++++ -->
+
+    <!-- START MODAL LUAR NEGERI-->
+                                    
+    <div id="luarnegeri" class="uk-modal-container2" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" >
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h4 class="uk-text-center"><strong>Luar Negeri</strong></h4>
+          
+          
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+                <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-1-1">
+                       <a href="" uk-toggle="target: #europa" > <div class="uk-panel">
+                            <img src="assets/img/europa.png" alt="">
+                            <div class="isi-modal-ln"><h4><strong>Europa</strong></h4>
+                                <p>Dapatkan lebih banyak lowongan pekerjaan
+                                     dari berbagai negara di europa</p></div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <a href="" uk-toggle="target: #asia" >   <div class="uk-panel">
+                            <img src="assets/img/asia.png" alt="">
+                            <div class="isi-modal-ln"><h4><strong>Asia</strong></h4>
+                                <p>Dapatkan lebih banyak lowongan pekerjaan
+                                     dari berbagai negara di Asia</p></div>
+                        </a>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <div class="uk-panel">
+                            <img src="assets/img/australia.png" alt="">
+                            <div class="isi-modal-ln"><h4><strong>Australia</strong></h4>
+                                <p>Dapatkan lebih banyak lowongan pekerjaan
+                                     dari berbagai negara di Australia</p></div>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <div class="uk-panel">
+                            <img src="assets/img/amerika.png" alt="">
+                            <div class="isi-modal-ln"><h4><strong>Amerika</strong></h4>
+                                <p>Dapatkan lebih banyak lowongan pekerjaan
+                                     dari berbagai negara di Amerika</p></div>
+                    </li>
+                   
+                </ul>
+             
+                <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+
+            </div>
+                      
+    
+      
+    </div> 
+</div>
+   
+    <!-- END MODAL LUAR NEGERI -->
+    
+
+    <!-- STRT MODAL BENDERA EUROPA -->
+
+    <div id="europa" class="uk-modal-container2" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" >
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h4 class="uk-text-center"><strong>Europa</strong></h4>
+            
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/austria.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Austria</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/belgium.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Belgium</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/france.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">France</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/germany.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Germany</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/italy.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Italy</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/europa/spain.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Spain</h3>
+                              </div>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+
+            </div>
+           
+        
+        </div>
+    </div>
+            
+    <!-- END MODAL BENDERA EUROPA -->
+
+     <!-- STRT MODAL BENDERA ASIA -->
+
+     <div id="asia" class="uk-modal-container2" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" >
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h4 class="uk-text-center"><strong>Asia</strong></h4>
+            
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                <ul  class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <a href="" uk-toggle="target: #next-negara" >
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/japan.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Japan</h3>
+                              </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/korea.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Korea</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/malaysia.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Malaysia</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/singapore.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Singapore</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/thailand.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Thailand</h3>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/img/flag/asia/vietnam.png" alt="">
+                            <div>
+                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Vietname</h3>
+                              </div>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+
+            </div>
+           
+        
+        </div>
+    </div>
+            
+    <!-- END MODAL BENDERA ASIA -->
+
+      <!-- LANJUTAN MODAL NEXT-NEGARA -->
+
+      <div id="next-negara" class="uk-modal-container2" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" >
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h4 class="uk-text-center"><strong>Jepang</strong></h4>
+          
+          
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+                <ul style="height: 10rem !important;" class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+                    <li >
+                       <a href="" uk-toggle="target: #" > <div class="uk-panel">
+                            <img src="assets/img/tokutei/relation.png" alt="">
+                            <div ><h4><strong>Tokutei Ginou</strong></h4>
+                                
+                        </div>
+                    </a>
+                    </li>
+                    <li >
+                        <a href="" uk-toggle="target: #" >   <div class="uk-panel">
+                            <img style="max-width: 5.5rem;" src="assets/img/tokutei/work.png" alt="">
+                            <div ><h4><strong>Work</strong></h4>
+                                </div>
+                        </a>
+                    </li>
+                    <li >
+                        <div class="uk-panel">
+                            <img style="max-width: 5.5rem;" src="assets/img/tokutei/Magang.png" alt="">
+                            <div ><h4><strong>Magang</strong></h4>
+                                </div>
+                    </li>
+                    <li >
+                        <div class="uk-panel">
+                            <img style="max-width: 5.5rem;" src="assets/img/tokutei/engginering.png" alt="">
+                            <div ><h4><strong>Engginering</strong></h4>
+                               </div>
+                    </li>
+                   
+                </ul>
+             
+                <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+
+            </div>
+                      
+    
+      
+    </div> 
+</div>
+   
+    <!-- END MODAL NEXT-NEGARA -->
+
+
+
+    <!-- START MODAL LOGIN STUDENTS -->
+    <div id="loginsiswa" class="uk-modal-container3" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
+                    <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                    <h2 class="uk-text-center "><strong>As Student</strong></h2>
+                
+                    <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                        <div class="uk-container uk-text-center uk-margin uk-padding-large " >
+                            <h4 class="uk-text-left"><strong>SIGN IN</strong></h4><br>
+                            <form>
+
+                                        
+                            <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Username/Email">
+                            <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Password">
+                            <button class="uk-button uk-button-primary uk-border-rounded   uk-width-1-1 uk-margin-medium-top uk-margin-small-bottom"><strong>Login</strong></button>    
+                        
+                            </form>  
+
+                                <div class="uk-inline-clip">
+                                <a href="#signup" uk-toggle><p>Buat Akun</p></a>
+                                <a href=""><p>Forget Password</p></a>
+                            </div>
+
+                                
+                                <h5 class="uk-text-center  uk-text-bold uk-margin-large-top ">Login With</h5>
+                                <p class="uk-align-center"><a href=""><img style="max-width: 2rem;" class="uk-margin-small-right" src="assets/img/email-2.png"></a><a href=""><img src="assets/img/facebook.svg"></a><a href=""><img class="uk-margin-small-left" src="assets/img/twitter.svg"></a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    <!-- END MODAL LOGIN STUDENTS -->
+
+
+  
+
+    <!-- END LANJUTAN MODAL NEGARA -->
+
+
+    <!-- START MODAL SIGNUP STUDENTS-->
+     
+    <div id="signup" class="uk-modal-container4" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/signup.png);">
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h2 class="uk-text-center uk-margin-large-bottom"><strong>As Students</strong></h2>
+
+            <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+                <div class="uk-container uk-text-center uk-margin uk-padding-large ">
+                    <h4 class="uk-float-left"><strong>Sign Up</strong></h4><br>
+                    <form>
+
+                        <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Nama">      
+                        <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Email">
+                        <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Password">
+                        <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Confirm Password">
+                    </form>  
+
+                          <button class="uk-button uk-button-primary uk-border-rounded uk-margin-medium-top uk-width-1-1 uk-margin-small-bottom"><strong>Sign Up</strong></button>    
+                
+                        <h5 class="uk-text-center uk-text-bold ">Login With</h5>
+                        <p class="uk-align-center"><a href=""><img style="max-width: 2rem;" class="uk-margin-small-right" src="assets/img/email-2.png"></a><a href=""><img src="assets/img/facebook.svg"></a><a href=""><img class="uk-margin-small-left" src="assets/img/twitter.svg"></a></p>
+                    </div>
+        </div>
+    </div>
+</div>
+    <!-- END MODAL SIGNUP STUDENTS-->
+
+     <!-- START MODAL LOGIN COMPANY-->
+     <div id="loginperusahaan" class="uk-modal-container3" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
+            <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+            <h2 class="uk-text-center "><strong>As Company</strong></h2>
+        
+            <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                <div class="uk-container uk-text-center uk-margin uk-padding-large " >
+                    <h4 class="uk-text-left"><strong>SIGN IN</strong></h4><br>
+                    <form>
+
+                                
+                    <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Username/Email">
+                    <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Password">
+                    <button class="uk-button uk-button-primary uk-border-rounded   uk-width-1-1 uk-margin-medium-top uk-margin-small-bottom"><strong>Login</strong></button>    
+                
+                    </form>  
+
+                        <div class="uk-inline-clip">
+                        <a href="#signupperusahaan" uk-toggle><p>Buat Akun</p></a>
+                        <a href=""><p>Forget Password</p></a>
+                    </div>
+
+                        
+                        <h5 class="uk-text-center  uk-text-bold uk-margin-large-top ">Login With</h5>
+                        <p class="uk-align-center"><a href=""><img style="max-width: 2rem;" class="uk-margin-small-right" src="assets/img/email-2.png"></a><a href=""><img src="assets/img/facebook.svg"></a><a href=""><img class="uk-margin-small-left" src="assets/img/twitter.svg"></a></p>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL LOGIN COMPANY -->
+
+<!-- START MODAL SIGNUP COMPANY-->
+
+<div id="signupperusahaan" class="uk-modal-container4" uk-modal>
+<div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/signup.png);">
+    <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+    <h2 class="uk-text-center uk-margin-large-bottom"><strong>As Company</strong></h2>
+
+    <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+        <div class="uk-container uk-text-center uk-margin uk-padding-large ">
+            <h4 class="uk-float-left"><strong>Sign Up</strong></h4><br>
+            <form>
+
+                <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Nama">      
+                <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Email">
+                <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Password">
+                <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Confirm Password">
+            </form>  
+
+                  <button class="uk-button uk-button-primary uk-border-rounded uk-margin-medium-top uk-width-1-1 uk-margin-small-bottom"><strong>Sign Up</strong></button>    
+        
+                <h5 class="uk-text-center uk-text-bold ">Login With</h5>
+                <p class="uk-align-center"><a href=""><img style="max-width: 2rem;" class="uk-margin-small-right" src="assets/img/email-2.png"></a><a href=""><img src="assets/img/facebook.svg"></a><a href=""><img class="uk-margin-small-left" src="assets/img/twitter.svg"></a></p>
+            </div>
+</div>
+</div>
+</div>
+<!-- END MODAL SIGNUP COMPANY-->
+
+  
+
+    <!-- END KHUSUS BAGIAN MODAL -->
+
+
+
 </body>
 <script src="assets/js/uikit.min.js"></script>
 <script src="assets/js/uikit-icons.min.js"></script>
