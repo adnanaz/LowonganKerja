@@ -1,0 +1,75 @@
+.perusahaan-informasi{
+    padding:3rem;
+}
+
+.menu-dashboard{
+    display: inline-grid !important;
+}
+
+
+
+
+
+//320px
+@include media-xs {
+    
+    
+}
+
+//460px
+@include media-s {
+  
+
+}
+
+//568px
+@include media-md {
+  
+  
+}
+
+//640px
+@include media-m {
+  
+}
+
+//768px
+@include media-xxl {
+    .perusahaan-informasi{
+        padding-left: 9rem;
+    }
+
+    .textarea-informasi{
+        max-width: 30rem !important;
+    }
+  
+}
+
+//992px
+@include media-l {
+    .perusahaan-informasi{
+        padding-left: 12rem;
+    }
+
+    .textarea-informasi{
+        max-width: 40rem !important;
+    }
+  
+}
+
+//1024px
+@include media-xl {
+ 
+}
+
+
+//1400px
+@include media-lg {
+    .perusahaan-informasi{
+        padding-left: 15rem;
+    }
+
+    .textarea-informasi{
+        max-width: 40rem !important;
+    }
+}

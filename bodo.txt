@@ -1,0 +1,10 @@
+ <section>
+            <div class="container perusahaan-terhubung">
+                <h2 class="" style="font-weight: bold;">Terhubung</h2>
+                <div class="">
+                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/email-2.png" alt="logo email"> Sambungkan </p></a>
+                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/facebook.svg" alt="logo facebook"> Sambungkan</p></a>
+                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/twitter.svg" alt="logo twitter"> Sambungkan</p></a>
+                </div>
+            </div>
+        </section>
