@@ -52,7 +52,7 @@ body {
   }
 }
 
-@mixin media-lg {
+@mixin media-xxl {
   @media screen and (min-width: 768px) {
     @content;
   }
@@ -74,7 +74,7 @@ body {
 
 
 
-@mixin media-xxl {
+@mixin media-lg {
   @media screen and (min-width: 1400px) {
     @content;
   }
