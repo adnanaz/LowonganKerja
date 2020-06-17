@@ -213,28 +213,6 @@ font-size: 1rem !important;
 }
 
 
-// CSS MODAL KOTA
-
-.modal-kota{
-    height: 30rem !important;
-    margin-top: 6rem !important;
-}
-.panel-kota{
-    height: 18rem !important;
-}
-
-.isi-modal-ln{
-    p{
-        color:black !important;
-    }
-    h4{
-        color:black !important;
-    }
-}
-// END MODAL KOTA
-
-
-
 @include media-xs {
     .banner__judul {
         padding: 2rem 2rem 4rem 2rem;
@@ -245,7 +223,7 @@ font-size: 1rem !important;
         display: none !important;
     }
 
-    .banner-cari, .loginas {
+    .uk-panel, .loginas {
         display: none !important;
     }
 
@@ -316,7 +294,7 @@ font-size: 1rem !important;
         padding: 5rem 2rem 0;
     }
 
-    .banner-cari {
+    .uk-panel {
         display: flow-root !important;
     }
 
@@ -567,7 +545,7 @@ font-size: 1rem !important;
     }
 }
 
-@include media-lg {
+@include media-xxl {
     .banner__judul {
         padding: 15rem 15rem     0;
         font-size: 3.5rem;
