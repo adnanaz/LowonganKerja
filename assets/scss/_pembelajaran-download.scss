@@ -1,0 +1,96 @@
+.materi-video{
+    display: flex;padding: 1rem 0.5rem 0.5rem 3rem;
+}
+.banner-bahasa{
+    img{
+        max-width: 33rem;
+    }
+}
+//320px
+@include media-xs {
+    .h1-kelasbahasa{
+        font-size: 1.7rem;
+    }
+    .h2-downloadvideo{
+        font-size: 1.1rem;
+    }
+    
+}
+
+//460px
+@include media-s {
+  
+    .h2-downloadvideo{
+        
+        margin-left: 3rem;
+        
+    }
+}
+
+//568px
+@include media-md {
+    .h1-kelasbahasa{
+        font-size: 2rem;
+    }
+    .h2-downloadvideo{
+        font-size: 1.5rem;
+    }
+  
+}
+
+//640px
+@include media-m {
+    .h2-downloadvideo{
+        
+        margin-left: 2rem;
+        
+    }
+}
+
+//768px
+@include media-xxl {
+  
+    .h1-kelasbahasa{
+        font-size: 2.5rem;
+    }
+    .h2-downloadvideo{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        
+    }
+    
+}
+
+//992px
+@include media-l {
+    .h1-kelasbahasa{
+        font-size: 2.8rem;
+    }
+    .h2-downloadvideo{
+        font-size: 2rem;   
+        margin-left: 7rem;
+    }
+    .materi-video{
+        margin-left: 6rem;
+    }
+  
+}
+
+//1024px
+@include media-xl {
+    .materi-video{
+        margin-left: 6rem;
+    }
+
+    .h2-downloadvideo{
+        margin-left: 8rem;
+    }
+}
+
+
+//1400px
+@include media-lg {
+    .materi-video{
+        margin-left: 6rem !important;
+           }
+}
