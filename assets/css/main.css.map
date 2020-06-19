@@ -20,7 +20,8 @@
         "../scss/_profilperusahaan-magang.scss",
         "../scss/_profilperusahaan-keamanan.scss",
         "../scss/_pembelajaran-download.scss",
-        "../scss/_pembelajaran-kelas.scss"
+        "../scss/_pembelajaran-kelas.scss",
+        "../scss/_tentang-kami.scss"
     ],
     "names": [],
     "file": "main.css"
