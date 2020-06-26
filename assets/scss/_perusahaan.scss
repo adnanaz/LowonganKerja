@@ -1,0 +1,58 @@
+.konten-perusahaan{
+    padding: 1rem;
+    padding-bottom: 3rem !important;
+}
+
+
+.button-pendaftaran{
+
+}
+
+
+
+// Responsive Mobile
+
+//320px
+@include media-xs {
+   .button-pendaftaran{
+    width: 10rem !important;
+    }
+
+    
+ }
+ 
+ //460px
+ @include media-s {
+    
+ }
+ 
+ //568px
+ @include media-md {
+    
+ }
+ 
+ //640px
+ @include media-m {
+  
+ }
+ 
+ //768px
+ @include media-xxl {
+   
+ }
+ 
+ //992px
+ @include media-l {
+  
+ }
+ 
+ //1024px
+ @include media-xl {
+    
+ }
+ 
+ 
+ //1400px
+ @include media-lg {
+    
+ }

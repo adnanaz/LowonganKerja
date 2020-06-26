@@ -1209,4 +1209,156 @@ body {
   font-size: 1.3rem !important;
   margin: 2rem 0 -1rem 2rem !important;
 }
+
+.banner-gallery {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .h2-gallery {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .banner-gallery {
+    padding: 2rem;
+  }
+  .h2-gallery {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .banner-gallery {
+    padding: 2rem;
+  }
+  .h2-gallery {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .banner-gallery {
+    padding: 2rem;
+  }
+  .h2-gallery {
+    margin-top: 2rem;
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-gallery {
+    padding: 2rem;
+  }
+  .h2-gallery {
+    margin-top: 2rem;
+    font-size: 2.4rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-gallery {
+    padding: 3rem;
+  }
+  .h2-gallery {
+    margin-top: 4rem;
+    font-size: 2.9rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-gallery {
+    padding: 3rem;
+  }
+  .h2-gallery {
+    margin-top: 5rem;
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .banner-gallery {
+    padding: 5rem;
+  }
+  .h2-gallery {
+    margin-top: 2rem;
+    font-size: 4rem !important;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .konten-gallery {
+    padding: 2rem;
+  }
+  .gallery-slider {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .gambar-gallery {
+    width: 50vh;
+  }
+  .konten-gallery {
+    padding: 3rem;
+  }
+  .gallery-slider {
+    padding: 2rem;
+  }
+  .judul-gallery {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .judul-gallery {
+    font-size: 2rem;
+  }
+  .gambar-gallery {
+    width: 40vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .judul-gallery {
+    font-size: 2rem;
+  }
+  .gambar-gallery {
+    width: 40vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .judul-gallery {
+    font-size: 2.7rem;
+  }
+  .gambar-gallery {
+    width: 30vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .judul-gallery {
+    font-size: 2.7rem;
+  }
+  .gambar-gallery {
+    width: 25vh;
+  }
+}
+
+.konten-perusahaan {
+  padding: 1rem;
+  padding-bottom: 3rem !important;
+}
+
+@media screen and (min-width: 320px) {
+  .button-pendaftaran {
+    width: 10rem !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
