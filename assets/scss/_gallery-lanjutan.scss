@@ -1,0 +1,82 @@
+
+
+
+// Responsive Mobile
+
+//320px
+@include media-xs {
+   .konten-gallery{
+       padding: 2rem;
+   }
+   .gallery-slider{
+    padding: 2rem;
+   }
+   
+}
+
+//460px
+@include media-s {
+    .gambar-gallery{
+        width: 50vh;
+    }
+    .konten-gallery{
+        padding: 3rem;
+    }
+    .gallery-slider{
+     padding: 2rem;
+    }
+    .judul-gallery{
+        font-size: 1.7rem;
+    }
+}
+
+//568px
+@include media-md {
+   
+}
+
+//640px
+@include media-m {
+    .judul-gallery{
+        font-size: 2rem;
+    }
+    .gambar-gallery{
+        width: 40vh;
+    }
+}
+
+//768px
+@include media-xxl {
+    .judul-gallery{
+        font-size: 2rem;
+    }
+    .gambar-gallery{
+        width: 40vh;
+    }
+}
+
+//992px
+@include media-l {
+    .judul-gallery{
+        font-size: 2.7rem;
+    }
+    .gambar-gallery{
+        width: 30vh;
+    }
+}
+
+//1024px
+@include media-xl {
+   
+}
+
+
+//1400px
+@include media-lg {
+    .judul-gallery{
+        font-size: 2.7rem;
+    }
+    .gambar-gallery{
+        width: 25vh;
+    }
+}

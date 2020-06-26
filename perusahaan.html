@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="uk-navbar uk-navbar-container navbar uk-margin">
+            <div class="uk-navbar-left">
+                <a href="javascript:void();">
+                    <h4> <strong>Lowker Webs</strong></h4>
+                </a>
+            </div>
+
+            <div class="uk-navbar-right">
+                <div class="hide__xl uk-hidden@s">
+                    <a class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-flip"
+                        href="javascript:void();">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Beranda</a></li>
+                    <li><a href="#">Pembelajaran</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <ul class="uk-nav uk-nav-default">
+                        <br>
+                        <li class="uk-active">
+                            <a href="javascript:void();">
+                                <img class="guest__avatar" src="assets/img/logo-avatar.png" alt="guest-logo">
+                                <h3>Guest</h3>
+                            </a>
+                        </li>
+                        <li class="uk-parent">
+                            <div class="uk-margin">
+                                <form class="uk-search uk-search-default">
+                                    <a href="javascript:void();" class="uk-search-icon-flip" uk-search-icon></a>
+                                    <input class="uk-search-input" uk-toggle="target: #offcanvas-flip1" type="search"
+                                        placeholder="Cari Sesuatu?">
+                                </form>
+                            </div>
+                        </li>
+                        <li class="uk-nav-header uk-text-center">Main Menu</li>
+                        <li><a href="javascript:void();"><span class="uk-margin-small-right"
+                                    uk-icon="icon: table"></span> Beranda</a>
+                        </li>
+                        <li><a href="javascript:void();"><span class="uk-margin-small-right"
+                                    uk-icon="icon: thumbnails"></span>
+                                Pembelajaran</a>
+                        </li>
+                        <li><a href="javascript:void();"><span class="uk-margin-small-right"
+                                    uk-icon="icon: thumbnails"></span>
+                                Gallery</a>
+                        </li>
+                        <li><a href="javascript:void();"><span class="uk-margin-small-right"
+                                    uk-icon="icon: thumbnails"></span>
+                                Tentang Kami</a>
+                        </li>
+                        <li class="uk-nav-header uk-text-center">Login As</li>
+                        <li class="li__special">
+                            <a class="uk-button uk-button-default" href="javascript:void();">Perusahaan</a>
+                        </li>
+                        <li class="li__special">
+                            <a class="btn__siswa uk-button uk-button-default" href="javascript:void();">Siswa</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-text-center"><small>All Rights Reserved &copy Lowker 2020 | Created by :
+                                OneCode.id</small>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- offcanvas baru -->
+            <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button><br><br>
+                    <div class="uk-child-width-1-2@s" uk-grid>
+                        <div>
+                            <div uk-grid>
+                                <div class="uk-width-auto@m">
+                                    <ul class="uk-tab-left"
+                                        uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                        <li class="li__tab"> <button class="uk-button uk-button-danger">Cari
+                                                Worker</button></li>
+                                        <li class="li__tab"> <button class="uk-button uk-button-danger">Cari
+                                                Pekerjaan</button></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-expand@m">
+                                    <ul id="component-tab-left" class="uk-switcher">
+                                        <li>
+                                            <div class="uk-inline">
+                                                <div class="uk-margin">
+                                                    <form class="uk-search uk-search-default">
+                                                        <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                                        <input class="uk-search-input" type="search"
+                                                            placeholder="Cari Worker">
+                                                    </form>
+                                                </div>
+                                                <div uk-dropdown="mode: click">
+                                                    <div class="card__flex sidebar__card">
+
+                                                        <a href="#" class="card__items">
+                                                            <figure>
+                                                                <img src="assets/img/anisa.png"
+                                                                    alt="Profile-Photo-Worker">
+                                                            </figure>
+                                                            <div class="caption sidebar__caption">
+                                                                <ul>
+                                                                    <li>
+                                                                        Nama : Annisa Kumalasari
+                                                                    </li>
+                                                                    <li>
+                                                                        Profesi : Dosen
+                                                                    </li>
+                                                                    <li>
+                                                                        Negara : Indonesia
+
+                                                                    </li>
+                                                                    <li>
+                                                                        Bahasa : Inggris & Indonesia
+                                                                    </li>
+
+                                                                    <button
+                                                                        class=" uk-button uk-button-primary">Detail</button>
+                                                                </ul>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="card__items">
+                                                            <figure>
+                                                                <img src="assets/img/anisa.png"
+                                                                    alt="Profile-Photo-Worker">
+                                                            </figure>
+                                                            <div class="caption sidebar__caption">
+                                                                <ul>
+                                                                    <li>
+                                                                        Nama : Annisa Kumalasari
+                                                                    </li>
+                                                                    <li>
+                                                                        Profesi : Dosen
+                                                                    </li>
+                                                                    <li>
+                                                                        Negara : Indonesia
+
+                                                                    </li>
+                                                                    <li>
+                                                                        Bahasa : Inggris & Indonesia
+                                                                    </li>
+
+                                                                    <button
+                                                                        class=" uk-button uk-button-primary">Detail</button>
+                                                                </ul>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="card__items">
+                                                            <figure>
+                                                                <img src="assets/img/anisa.png"
+                                                                    alt="Profile-Photo-Worker">
+                                                            </figure>
+                                                            <div class="caption sidebar__caption">
+                                                                <ul>
+                                                                    <li>
+                                                                        Nama : Annisa Kumalasari
+                                                                    </li>
+                                                                    <li>
+                                                                        Profesi : Dosen
+                                                                    </li>
+                                                                    <li>
+                                                                        Negara : Indonesia
+
+                                                                    </li>
+                                                                    <li>
+                                                                        Bahasa : Inggris & Indonesia
+                                                                    </li>
+
+                                                                    <button
+                                                                        class=" uk-button uk-button-primary">Detail</button>
+                                                                </ul>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="card__items">
+                                                            <figure>
+                                                                <img src="assets/img/anisa.png"
+                                                                    alt="Profile-Photo-Worker">
+                                                            </figure>
+                                                            <div class="caption sidebar__caption">
+                                                                <ul>
+                                                                    <li>
+                                                                        Nama : Annisa Kumalasari
+                                                                    </li>
+                                                                    <li>
+                                                                        Profesi : Dosen
+                                                                    </li>
+                                                                    <li>
+                                                                        Negara : Indonesia
+
+                                                                    </li>
+                                                                    <li>
+                                                                        Bahasa : Inggris & Indonesia
+                                                                    </li>
+
+                                                                    <button
+                                                                        class=" uk-button uk-button-primary">Detail</button>
+                                                                </ul>
+                                                            </div>
+                                                        </a>
+                                                        <div class="items__limit">
+                                                            <button class=" uk-button uk-button-primary">More
+                                                                ...</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <form class="uk-search uk-search-default">
+                                                <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                                <input class="uk-search-input" type="search"
+                                                    placeholder="Cari Pekerjaan">
+                                            </form>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end offcanvas baru  -->
+        </nav>
+    </header>
+<main>
+
+    <section >
+        
+            <div id="kontenutama" class="uk-container konten-perusahaan uk-box-shadow-large uk-align-center uk-text-center uk-margin-large-top uk-coloumn" > 
+                
+                <h2 class="uk-text-primary uk-text-bold uk-margin-large-top">Pendaftaran</h2>
+
+                <p class="uk-margin-large-bottom">Selamat Datang! Mohon isikan biodata di bawah <br>
+                ini dengan benar supaya para pencari kerja dapat <br>
+                mudah mengaksesnya </p>
+
+                <form>
+                    
+                    <input class="uk-input uk-form-width-xlarge uk-box-shadow-small" style="border: 1px solid #707070" type="text" placeholder="Nama Perusahaan">
+                    
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="Deskripsi Perusahaan" style="border: 1px solid #707070"></textarea>
+                    </div>
+
+                    <div class="uk-margin">
+                        <select style="border: 1px solid #707070" class="uk-select uk-width-1-2 uk-align-left">
+                            <option >Kota</option>
+                            <option>Yogyakarta</option>
+                        </select>
+                    </div>
+
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-xlarge" style="border: 1px solid #707070" type="text" placeholder="Alamat Perusahaan">
+                    </div>
+
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-xlarge" style="border: 1px solid #707070" type="text" placeholder="Negara">
+                    </div>
+                    
+                    <div class="uk-margin uk-align-left">
+                        <p>Upload Logo Perusahaan</p>
+                    <p><img style="border: 1px solid #707070" id="output" src="assets/img/uploadimage.png" width="140" /></p>
+                    <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+                    <label class="tombol-upload" for="file" >Upload Image</label>
+                    
+                    <script>
+                    var loadFile = function(event) {
+                    var image = document.getElementById('output');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                    </script>
+                </div>
+            </form>
+
+            <a href="form.html"><button class="uk-button button-pendaftaran uk-button-primary uk-width-1-3 uk-margin-large-top">Lanjutkan</button></a>
+            
+            </div>
+    
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="flex-footer">
+            <ul class="ul-list">
+                <li class="header"> Perusahaan</li>
+                <li><a href="#"> Beranda</a></li>
+                <li><a href="#">Tentang Perusahaan</a> </li>
+            </ul>
+            <ul>
+                <li class="header">Bantuan</li>
+                <li><a href="#">Hubungi Kami</a> </li>
+                <li><a href="#">FAQ</a> </li>
+            </ul>
+            <ul>
+                <li class="header">Produk & Layanan</li>
+                <li><a href="#">Lowongan Kerja</a> </li>
+                <li><a href="#">Pembelajaran</a> </li>
+                <li><a href="#"> Magang</a></li>
+            </ul>
+            <ul>
+                <li class="header">Informasi Lainya</li>
+                <li><a href="#">Testimoni</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-footer-2">
+            <ul class="special">
+                <li class="header">Temukan kami di</li>
+                <div class="social">
+                    <a href="#"><img class="social__img--special" src="assets/img/email-2.png" alt="logo email"></a>
+                    <a href="#"><img class="social__img" src="assets/img/facebook.svg" alt="logo facebook"></a>
+                    <a href="#"><img class="social__img" src="assets/img/twitter.svg" alt="logo twitter"></a>
+                </div>
+                <li><small>2020 - Lowongan Kerja</small> </li>
+                <li><small>&copy All Rights Reserved.</small> </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/uikit-icons.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+<script>
+
+</script>
+
+</html>

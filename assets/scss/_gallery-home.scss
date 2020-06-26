@@ -1,0 +1,93 @@
+
+.banner-gallery{
+    display: inline-flex;
+    padding: 1.2rem;
+}
+
+// Responsive Mobile
+
+//320px
+@include media-xs {
+    .h2-gallery{
+        font-size: 1.2rem;
+    }
+}
+
+//460px
+@include media-s {
+    .banner-gallery{
+        padding: 2rem;
+    }
+  
+    .h2-gallery{
+        font-size: 1.4rem !important;
+    }
+}
+
+//568px
+@include media-md {
+    .banner-gallery{
+        padding: 2rem;
+    }
+  
+    .h2-gallery{
+        font-size: 2rem !important;
+    }
+}
+
+//640px
+@include media-m {
+    .banner-gallery{
+        padding: 2rem;
+    }
+    .h2-gallery{
+        margin-top: 2rem;
+        font-size: 1.8rem !important;
+    }
+}
+
+//768px
+@include media-xxl {
+    .banner-gallery{
+        padding: 2rem;
+    }
+
+    .h2-gallery{
+        margin-top: 2rem;
+        font-size: 2.4rem !important;
+    }
+}
+
+//992px
+@include media-l {
+    .banner-gallery{
+        padding: 3rem;
+    }
+    .h2-gallery{
+        margin-top: 4rem;
+        font-size: 2.9rem !important;
+    }
+}
+
+//1024px
+@include media-xl {
+    .banner-gallery{
+        padding: 3rem;
+    }
+    .h2-gallery{
+        margin-top: 5rem;
+        font-size: 3rem !important;
+    }
+}
+
+
+//1400px
+@include media-lg {
+    .banner-gallery{
+        padding: 5rem;
+    }
+    .h2-gallery{
+        margin-top: 2rem;
+        font-size: 4rem !important;
+    }
+}
