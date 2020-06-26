@@ -1,108 +1,114 @@
 .alljobs {
-    &__banner {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+  &__banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        img {
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 }
 
 @include media-xs {
-    .alljobs {
-        &__banner {
-            flex-flow: column-reverse wrap;
-            justify-content: space-between;
-          h1 {
-              font-size: 1.5rem;
-              padding:  0 .5rem;
+  .alljobs {
+    &__banner {
+      flex-flow: column-reverse wrap;
+      justify-content: space-between;
+      h1 {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: 797.5px;
+        max-height: 495.46px;
+      }
+    }
+  }
+
+  .content {
+    padding: 0 1rem;
+    .filter {
+      text-align: center;
+    }
+
+    .flex__boxes {
+      h1 {
+        font-size: 1.5rem;
+      }
+      ul {
+        padding-left: 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          margin: 1rem;
+
+          .uk-card-default {
+            height: 563px;
+
+            .img__alljobs {
+              width: auto;
+              height: 150px;
+            }
           }
-    
-            img {
-                width: 100%;
-                max-width: 797.5px;
-                max-height: 495.46px;
-
-            }
         }
+      }
     }
-    
-    .content{
-        padding: 0 1rem;
-        .filter {
-            text-align: center;
-        }
-
-        .flex__boxes {
-
-            h1 {
-                font-size: 1.5rem;
-            }
-            ul {
-                padding-left: 0;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-                justify-content: center;
-
-                li {
-                    margin: 1rem;
-
-                    .uk-card-default {
-                        height:563px;
-
-                        .img__alljobs {
-                            width: auto;
-                            height: 150px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-  
+  }
 }
 
 @include media-lg {
-    .alljobs {
-        &__banner {
-            flex-flow: row nowrap;
-          h1 {
-              font-size: 1.5rem;
-              padding:  0 .5rem;
-          }
-    
-            img {
-                width: 100%;
-            }
-        }
-    }
+  .alljobs {
+    &__banner {
+      flex-flow: row nowrap;
+      h1 {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+      }
 
-    .content {
-        margin-top: 1rem;
+      img {
+        width: 100%;
+      }
     }
+  }
+
+  .content {
+    margin-top: 1rem;
+  }
 }
 
 @include media-l {
-    .alljobs {
-          h1 {
-              font-size: 1.7rem;
-              padding:  0 .5rem;
-          }
-
+  .alljobs {
+    h1 {
+      font-size: 1.7rem;
+      padding: 0 0.5rem;
     }
+  }
+
+  .filter__margin {
+    padding: 0 10rem;
+
+    .uk-search-default .uk-search-input {
+      height: 40px;
+      padding-left: 6px;
+      padding-right: 6px;
+      background: 0 0;
+      border: 1px solid grey;
+    }
+  }
 }
 
 @include media-xxl {
-    .alljobs {
-          h1 {
-              font-size: 2.5rem;
-              padding:  0 10rem;
-          }
-
+  .alljobs {
+    h1 {
+      font-size: 2.5rem;
+      padding: 0 10rem;
     }
+  }
 }
