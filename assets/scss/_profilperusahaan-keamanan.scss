@@ -1,0 +1,11 @@
+.perusahaan__keamanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+  .form-p {
+    width: 100%;
+    text-align: center;
+  }
+}
