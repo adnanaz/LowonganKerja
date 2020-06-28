@@ -1548,4 +1548,99 @@ body {
   color: white;
   font-size: 1.4rem;
 }
+
+.lamaran {
+  width: 100%;
+  height: 100%;
+  background: url("../img/banner__lamaran.png") center top;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.lamaran__judul {
+  color: white;
+  padding: 1rem 0 0.5rem;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.lamaran .header__text {
+  padding: 2rem;
+}
+
+.lamaran .header__text button {
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+}
+
+.lamaran__content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.lamaran__content h1 {
+  font-size: 1.1rem;
+}
+
+.lamaran__content .lamaran__flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.lamaran__content .lamaran__flex .german__bg {
+  background: url("../img/german.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .german__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .australia__bg {
+  background: url("../img/sydney.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .australia__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg {
+  background: url("../img/tokyo.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg {
+  background: url("../img/usa.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
 /*# sourceMappingURL=main.css.map */
