@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -107,8 +109,9 @@
                                                 Worker</button></li>
                                         <li class="li__tab"> <button class="uk-button uk-button-danger">Cari
                                                 Pekerjaan</button></li>
-                                    </ul>
+                                    </ul>  
                                 </div>
+
                                 <div class="uk-width-expand@m">
                                     <ul id="component-tab-left" class="uk-switcher">
                                         <li>
@@ -255,90 +258,47 @@
                 <!-- end offcanvas baru  -->
         </nav>
     </header>
+<main>
 
-    <main class="" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 550; repeat: true">
-        <section class="bannerCompany">
-            <figure class="bannerCompany__banner">
-                <img width="100%" src="assets/img/kfcbanner.jpg" alt="banner-company">
-            </figure>
-            <figure class="bannerCompany__profile">
-                <img src="assets/img/logo-mcd.svg" alt="profile-photo-company">
-            </figure>
-            <div class="box-wrap">
-                <h1 class="uk-heading-small@s">PT KFC Indonesia</h1>
-                <div class="box">
-                    <img src="assets/img/location.svg" alt="location-logo">
-                    <p>Sleman City Mall Lantai 3, Jln. Magelang No 45 </p>
-                </div>
-            </div>
-        </section>
-
-
-        <section>
-
-            <div class="slider-profile">
-
-                <button class="uk-button uk-button-default uk-margin-small-right button-tarik" type="button" uk-toggle="target: #offcanvas-slide"
-                >Tarik</button>
-    
-                <div id="offcanvas-slide" uk-offcanvas="overlay: true">
-                    <div class="uk-offcanvas-bar"  style="background: #1e87f0;">
+    <section >
+        
+            <div id="kontenutama" class="uk-container konten-perusahaan uk-box-shadow-large  uk-margin-large-top uk-coloumn" > 
                 
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-                        <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
-                        <img class="uk-align-center" src="assets/img/kfclogo.png" alt="">
-                        <h3 class="uk-text-bold uk-text-center" style="color: white;">KFC INDONESIA</h3>
-                        <p class="uk-text-center uk-margin-large-bottom" style="color: white;">0274-4434-1144</p>
-    
-                        <div class="uk-margin-medium-left">
-                           <a href=""> <button class="uk-button uk-button-text uk-margin-small-bottom">
-                                <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon1.png" alt="">Company Profile</h4> 
-                            </button></a>
-                            <br>
-                            <a href="">
-                       <button class="uk-button uk-button-text uk-margin-small-bottom">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon2.png" alt="">Informasi</h4></button></a>
-                        <a href="">
-                         <button class="uk-button uk-button-text uk-margin-small-bottom">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon3.png" alt="">Buat Magang</h4></button></a>
-                        <a href="">
-                         <button class="uk-button uk-button-text uk-margin-small-bottom">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon4.png" alt="">Terhubung</h4></button></a>
-                        
-                        <a href="">
-                            <button class="uk-button uk-button-text uk-margin-small-bottom">
-                           <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon5.png" alt="">Keamanan</h4></button></a>
-                        
-                           <a href="">
-                            <button class="uk-button uk-button-text">
-                           <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon6.png" alt="">Bantuan</h4></button></a>
-       
-                        <br>
-                        <br>
-                        <br>
-                        
-                        <a href="">
-                         <button class="uk-button uk-button-text">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="assets/img/icon7.png" alt="">Exit</h4></button></a>
-                      
-    
-                    </div>
+                <h2 class="uk-text-primary uk-text-center uk-text-bold uk-margin-medium-top">Pendaftaran</h2>
+
+                <p class="uk-margin-large-bottom uk-text-center"><strong>Selamat Datang! Mohon isikan biodata di bawah <br>
+                ini dengan benar supaya para pencari kerja dapat <br>
+                mudah mengaksesnya </strong> </p>
+
+                <form>
+                    <div class="uk-margin">
+                    <input class="uk-input form-all uk-form-width-xlarge uk-box-shadow-small" style="border: 1px solid #707070" type="text" placeholder="Nama Lengkap">
                 </div>
+                    <div class="uk-margin">
+                         
+                        <input class="uk-input form-all uk-form-width-xlarge uk-box-shadow-small" style="border: 1px solid #707070" type="text" placeholder="Alamat Email">
+                     </div>
+                     <div class="uk-margin">
+                         
+                        <input class="uk-input form-all uk-form-width-xlarge uk-box-shadow-small" style="border: 1px solid #707070" type="text" placeholder="Alamat Email Alternatif">
+                     </div>
+                     <div class="uk-margin">
+                         
+                        <input class="uk-input form-all uk-form-width-medium uk-box-shadow-small" style="border: 1px solid #707070" type="text" placeholder="Nomor Telepon">
+                     </div>
+                    
+                          
+                    
+            </form>
+            <div class="tombol-tengah uk-text-center">
+            <a href="form.html"><button class="uk-button button-pendaftaran uk-button-primary uk-width-1-3 uk-margin-large-top">Lanjutkan</button></a>
+        </div>
+                   
             </div>
-
-
-
-            <div class="container perusahaan-terhubung">
-                <h2 class="" style="font-weight: bold;">Terhubung</h2>
-                <div class="isi-medsos-perusahaan">
-                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/email-2.png" alt="logo email"> Sambungkan </p></a>
-                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/facebook.svg" alt="logo facebook"> Sambungkan</p></a>
-                    <a href="#"><p><img class="" style="width: 7vh;" src="assets/img/twitter.svg" alt="logo twitter"> Sambungkan</p></a>
-                </div>
-            </div>
-        </section>
-
+            <br>
+            <br>
+    
+    </section>
 
     </main>
 
