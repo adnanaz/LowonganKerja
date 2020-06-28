@@ -919,10 +919,6 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .perusahaan-terhubung {
-    padding: 3rem;
-    padding-left: 9rem;
-  }
   .isi-medsos-perusahaan img {
     width: 4vh !important;
   }
@@ -934,48 +930,15 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .perusahaan-terhubung {
-    padding: 3rem;
-    padding-left: 10rem;
-  }
+.flex-form {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
 }
 
-.form-gaji {
-  margin-left: -14px !important;
-}
-
-.waktu-radio {
-  line-height: 3rem;
-}
-
-@media screen and (min-width: 460px) {
-  .gaji-minimal {
-    width: 160px !important;
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
-  }
-  .gaji-maximal {
-    width: 160px !important;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .perusahaan-magang {
-    padding-left: 6rem !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .perusahaan-magang {
-    padding-left: 8rem !important;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .perusahaan-magang {
-    padding-left: 15rem !important;
-  }
+.flex-form .gaji-minimal {
+  margin: 0.5rem 1rem;
 }
 
 .perusahaan__keamanan {
@@ -1168,8 +1131,6 @@ body {
 }
 
 .banner-gallery {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 1.2rem;
 }
@@ -1317,5 +1278,100 @@ body {
   .button-pendaftaran {
     width: 10rem !important;
   }
+}
+
+.lamaran {
+  width: 100%;
+  height: 100%;
+  background: url("../img/banner__lamaran.png") center top;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.lamaran__judul {
+  color: white;
+  padding: 1rem 0 0.5rem;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.lamaran .header__text {
+  padding: 2rem;
+}
+
+.lamaran .header__text button {
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+}
+
+.lamaran__content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.lamaran__content h1 {
+  font-size: 1.1rem;
+}
+
+.lamaran__content .lamaran__flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.lamaran__content .lamaran__flex .german__bg {
+  background: url("../img/german.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .german__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .australia__bg {
+  background: url("../img/sydney.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .australia__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg {
+  background: url("../img/tokyo.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg {
+  background: url("../img/usa.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  width: 100vh;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=main.css.map */

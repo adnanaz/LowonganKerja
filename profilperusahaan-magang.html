@@ -411,17 +411,18 @@
                             </div>
 
                         <p>Masukkan Waktu Kerja</p>
-                        <div class="uk-margin waktu-radio uk-grid-small uk-child-width-auto uk-grid">
+                        <div class="uk-margin flex-form uk-grid-small uk-child-width-auto uk-grid">
                             <label><input class="uk-radio" type="radio" name="radio2" checked> Harian</label>
                             <label><input class="uk-radio" type="radio" name="radio2"> Mingguan</label>
                             <label><input class="uk-radio" type="radio" name="radio2"> Bulanan</label>
                             <label><input class="uk-radio" type="radio" name="radio2"> Tahunan</label>
                         </div>
                         <p>Masukkan Gaji</p>
-                        <div class="uk-grid form-gaji">
-                            <input class="uk-input uk-width-1-1 gaji-minimal" style="width: 150px" type="text" placeholder="Minimal">
 
-                            <input class="uk-input uk-width-1-1 gaji-maximal" style="width: 150px" type="text" placeholder="Maximal">
+                        <div class="flex-form">
+                            <input type="number" class="uk-input uk-width-1-2@s gaji-minimal"  type="text" placeholder="Minimal">
+
+                            <input type="number" class="uk-input uk-width-1-2@s gaji-minimal"  type="text" placeholder="Maximal">
                     </div>
                     <p>Di Tempatkan</p>
                     <select class="uk-select" style="width:150px" placeholder="">
@@ -461,7 +462,7 @@
 
             <p>Masukkan Foto Perusahaan</p>
                       
-            <p><img id="output" src="assets/img/uploadimage.png" width="140" /></p>
+            <p><img id="output" src="assets/img/uploadimage.png" width="50%" /></p>
                     <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
                     <label class="tombol-upload" for="file" >Upload Image</label>
                     
