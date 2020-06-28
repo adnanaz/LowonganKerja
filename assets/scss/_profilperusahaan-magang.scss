@@ -1,67 +1,67 @@
-// .form-gaji {
-//   margin-left: -14px !important;
-// }
-
-// .waktu-radio {
-//   line-height: 3rem;
-// }
-
-.flex-form {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-  justify-content: center;
-
-  .gaji-minimal {
-    margin: 0.5rem 1rem;
-  }
+.form-gaji{
+    margin-left: -14px !important;
 }
+
+.waktu-radio{
+    line-height: 3rem;
+}
+
+
 
 //320px
 @include media-xs {
+    
+    
 }
 
 //460px
 @include media-s {
-  //   .gaji-minimal {
-  //     width: 160px !important;
-  //     margin-right: 1rem !important;
-  //     margin-left: 1rem !important;
-  //   }
-  //   .gaji-maximal {
-  //     width: 160px !important;
-  //   }
+.gaji-minimal{
+    width: 160px !important;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}  
+.gaji-maximal{
+    width: 160px !important;
+}  
 }
 
 //568px
 @include media-md {
+  
+  
 }
 
 //640px
 @include media-m {
-  //   .perusahaan-magang {
-  //     padding-left: 6rem !important;
-  //   }
+    .perusahaan-magang{
+        padding-left: 6rem !important;
+    }
 }
 
 //768px
 @include media-xxl {
-  //   .perusahaan-magang {
-  //     padding-left: 8rem !important;
-  //   }
+    .perusahaan-magang{
+        padding-left: 8rem !important;
+    }
+  
 }
 
 //992px
 @include media-l {
+   
+  
 }
 
 //1024px
 @include media-xl {
+ 
 }
+
 
 //1400px
 @include media-lg {
-  //   .perusahaan-magang {
-  //     padding-left: 15rem !important;
-  //   }
+    .perusahaan-magang{
+        padding-left: 15rem !important;
+    }
 }
