@@ -1492,4 +1492,12 @@ body {
 .keterangan-ilustrasi button {
   width: 13rem !important;
 }
+
+.perusahaan-awal {
+  padding: 2rem;
+}
+
+.perusahaan-awal button {
+  width: 13rem;
+}
 /*# sourceMappingURL=main.css.map */
