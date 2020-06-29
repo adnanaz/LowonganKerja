@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
@@ -35,9 +34,7 @@ body {
 .uk-navbar-nav > li > a {
   color: black !important;
   text-transform: capitalize !important;
-  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
-  -webkit-transition-property: color,background-color;
   transition-property: color,background-color;
 }
 
@@ -84,19 +81,13 @@ body {
 }
 
 .steps .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   text-align: center;
 }
 
 .steps .flex figure {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin: 1rem;
 }
 
@@ -116,7 +107,6 @@ body {
 
 .card-boxes .flex-card {
   margin: 1rem;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
@@ -148,8 +138,7 @@ body {
   padding: 30px 30px;
   margin: 1rem;
   min-height: 550px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .slider-boxes .slider .ul-slider li .uk-card-body .imgSliderLowker {
@@ -162,13 +151,8 @@ body {
 }
 
 .flex-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   background-color: #333;
   color: white;
 }
@@ -245,9 +229,7 @@ body {
     width: 15vh;
   }
   .flex-footer {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    justify-content: start;
   }
 }
 
@@ -260,8 +242,7 @@ body {
   }
   .card-boxes .flex-card {
     margin: 2rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -282,8 +263,6 @@ body {
 
 @media screen and (min-width: 640px) {
   .uk-navbar-nav {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
   .banner__judul {
@@ -316,13 +295,8 @@ body {
     padding: 0 1rem !important;
   }
   .card__flex .card__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
   .card__flex figure img {
     width: 13vh;
@@ -338,13 +312,8 @@ body {
     margin: 1rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -360,13 +329,8 @@ body {
     padding: 11rem 4rem 11rem 4rem;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -377,8 +341,7 @@ body {
   }
   .card-boxes .flex-card {
     margin: 3rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
   }
   .slider-boxes .slider .ul-slider li .uk-card-body {
@@ -388,9 +351,7 @@ body {
     min-height: 250px !important;
   }
   .flex-footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -413,10 +374,7 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -447,10 +405,7 @@ body {
     padding: 0 1rem !important;
   }
   .steps .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
   .steps .flex figure {
     margin: 1rem;
@@ -460,8 +415,7 @@ body {
     width: 17vh;
   }
   .card-boxes .flex-card {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     margin: 1rem;
     padding: 1rem;
   }
@@ -471,13 +425,8 @@ body {
   }
   .card-boxes .flex-card figure {
     padding: 0 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse;
-            flex-flow: row-reverse;
+    flex-flow: row-reverse;
   }
   .card-boxes .flex-card figure figcaption {
     padding: 0 1rem;
@@ -537,9 +486,7 @@ body {
 }
 
 .uk-tab > * {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   padding-left: 20px;
   position: relative;
   margin: .5rem;
@@ -550,16 +497,9 @@ body {
 }
 
 .sidebar__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  flex-flow: column wrap;
+  justify-content: start;
 }
 
 .sidebar__card .sidebar__caption ul {
@@ -712,15 +652,9 @@ body {
 
 .alljobs__banner {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .alljobs__banner img {
@@ -729,13 +663,8 @@ body {
 
 @media screen and (min-width: 320px) {
   .alljobs__banner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse wrap;
-            flex-flow: column-reverse wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: column-reverse wrap;
+    justify-content: space-between;
   }
   .alljobs__banner h1 {
     font-size: 1.5rem;
@@ -757,19 +686,10 @@ body {
   }
   .content .flex__boxes ul {
     padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
   .content .flex__boxes ul li {
     margin: 1rem;
@@ -785,10 +705,7 @@ body {
 
 @media screen and (min-width: 1400px) {
   .alljobs__banner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
   }
   .alljobs__banner h1 {
     font-size: 1.5rem;
@@ -851,8 +768,6 @@ body {
 }
 
 .flex__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -882,13 +797,8 @@ body {
     font-size: 1.5rem;
   }
   .box-wrap .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     margin: 1rem 0;
   }
   .box-wrap .box img {
@@ -952,16 +862,9 @@ body {
     padding: 2rem;
   }
   .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-flow: row wrap !important;
-            flex-flow: row wrap !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap !important;
+    justify-content: center;
   }
 }
 
@@ -993,27 +896,17 @@ body {
 }
 
 .perusahaan-cp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 2rem;
   margin: 0 auto;
   background: #f9f9f9;
 }
 
 .menu-dashboard {
-  display: -ms-inline-grid !important;
   display: inline-grid !important;
 }
 
@@ -1086,19 +979,10 @@ body {
 }
 
 .perusahaan__keamanan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .perusahaan__keamanan .form-p {
@@ -1111,13 +995,8 @@ body {
 }
 
 .materi-video {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   padding: 0 1rem;
 }
 
@@ -1155,13 +1034,8 @@ body {
 
 .pembelajaran__banner {
   padding: 1rem 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .pembelajaran__banner h1 {
@@ -1191,11 +1065,8 @@ body {
 
 .pembelajaran__slider .ul-slider li .cardSliderPembelajaran {
   padding: 1rem;
-  -webkit-box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
-          box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
+  justify-content: center;
 }
 
 .pembelajaran__slider .ul-slider li .imgSliderPembelajaran {
@@ -1223,8 +1094,7 @@ body {
   }
   .pembelajaran__slider .ul-slider li .cardSliderPembelajaran {
     padding: 1rem;
-    -webkit-box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
-            box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
+    box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
     max-width: 22rem;
     margin: 0 auto;
   }
@@ -1247,8 +1117,7 @@ body {
   }
   .pembelajaran__slider .ul-slider li .cardSliderPembelajaran {
     padding: 1rem;
-    -webkit-box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
-            box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
+    box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
     max-width: 24rem;
     margin: 0 auto;
   }
@@ -1278,8 +1147,7 @@ body {
   }
   .pembelajaran__slider .ul-slider li .cardSliderPembelajaran {
     padding: 1rem;
-    -webkit-box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
-            box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
+    box-shadow: 0 5px 15px rgba(199, 101, 101, 0.3);
     margin: 0 auto;
   }
   .pembelajaran__slider .ul-slider li .imgSliderPembelajaran {
@@ -1300,8 +1168,6 @@ body {
 }
 
 .banner-gallery {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 1.2rem;
 }
@@ -1491,5 +1357,610 @@ body {
 
 .keterangan-ilustrasi button {
   width: 13rem !important;
+}
+
+.lamaran {
+  width: 100%;
+  height: 100%;
+  background: url("../img/banner__lamaran.png") center top;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.lamaran__judul {
+  color: white;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.lamaran .header__text {
+  padding: 2rem 0;
+}
+
+.lamaran .header__text button {
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+}
+
+.lamaran__content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.lamaran__content h1 {
+  font-size: 1.1rem;
+}
+
+.lamaran__content .lamaran__flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.lamaran__content .lamaran__flex .german__bg {
+  background: url("../img/german.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 30vh;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.lamaran__content .lamaran__flex .german__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .australia__bg {
+  background: url("../img/sydney.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  width: 30vh;
+  margin: 0.5rem;
+}
+
+.lamaran__content .lamaran__flex .australia__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg {
+  background: url("../img/tokyo.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  width: 30vh;
+  margin: 0.5rem;
+}
+
+.lamaran__content .lamaran__flex .jepang__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg {
+  background: url("../img/usa.jpg") center;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  width: 30vh;
+  margin: 0.5rem;
+}
+
+.lamaran__content .lamaran__flex .amerika__bg figcaption {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.testimonial .uk-slideshow-items > * {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .lamaran .header__text {
+    padding: 1rem;
+  }
+  .lamaran__judul {
+    color: white;
+    padding: 0rem 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .header__text {
+    padding: 1rem;
+  }
+  .header__text button {
+    padding: 0 10px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .lamaran .header__text {
+    padding: 2rem;
+  }
+  .header__text {
+    padding: 2rem;
+  }
+  .lamaran__judul {
+    color: white;
+    padding: 1rem 2rem 1.5rem;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .lamaran__content .lamaran__flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .german__bg {
+    background: url("../img/german.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vh;
+    margin: 0.5rem;
+  }
+  .lamaran__content .lamaran__flex .german__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg {
+    background: url("../img/sydney.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vh;
+    margin: 0.5rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg {
+    background: url("../img/tokyo.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vh;
+    margin: 0.5rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg {
+    background: url("../img/usa.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vh;
+    margin: 0.5rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .lamaran .header__text {
+    padding: 4rem;
+  }
+  .lamaran__content {
+    padding: 1rem;
+    text-align: center;
+  }
+  .lamaran__content h1 {
+    font-size: 1.1rem;
+  }
+  .lamaran__content .lamaran__flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .lamaran__content .lamaran__flex .german__bg {
+    background: url("../img/german.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .german__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg {
+    background: url("../img/sydney.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .australia__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg {
+    background: url("../img/tokyo.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg {
+    background: url("../img/usa.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lamaran {
+    width: 100%;
+    height: 100%;
+    background: url("../img/banner__lamaran.png") center top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .lamaran__judul {
+    color: white;
+    padding: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  .lamaran .header__text {
+    padding: 5rem 10rem;
+  }
+  .lamaran .header__text button {
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+  }
+  .lamaran__content {
+    padding: 1rem;
+    text-align: center;
+  }
+  .lamaran__content h1 {
+    font-size: 1.1rem;
+  }
+  .lamaran__content .lamaran__flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .lamaran__content .lamaran__flex .german__bg {
+    background: url("../img/german.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .german__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg {
+    background: url("../img/sydney.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .australia__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg {
+    background: url("../img/tokyo.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg {
+    background: url("../img/usa.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 300px;
+    height: 175px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lamaran__content {
+    padding: 1rem;
+    text-align: center;
+  }
+  .lamaran__content h1 {
+    font-size: 1.1rem;
+  }
+  .lamaran__content .lamaran__flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .lamaran__content .lamaran__flex .german__bg {
+    background: url("../img/german.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 450px;
+    height: 200px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .german__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg {
+    background: url("../img/sydney.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 450px;
+    height: 200px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .australia__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg {
+    background: url("../img/tokyo.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 450px;
+    height: 200px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg {
+    background: url("../img/usa.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 450px;
+    height: 200px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lamaran {
+    width: 100%;
+    height: 100%;
+    background: url("../img/banner__lamaran.png") center top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .lamaran__judul {
+    color: white;
+    padding: 2rem 0;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .lamaran .header__text {
+    padding: 10rem 0;
+  }
+  .lamaran .header__text button {
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .lamaran {
+    width: 100%;
+    height: 100%;
+    background: url("../img/banner__lamaran.png") center top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .lamaran__judul {
+    color: white;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lamaran .header__text {
+    padding: 12rem 0;
+  }
+  .lamaran .header__text button {
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+  }
+  .lamaran__content {
+    padding: 1rem;
+    text-align: center;
+  }
+  .lamaran__content h1 {
+    font-size: 1.1rem;
+  }
+  .lamaran__content .lamaran__flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .lamaran__content .lamaran__flex .german__bg {
+    background: url("../img/german.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 550px;
+    height: 250px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .german__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .australia__bg {
+    background: url("../img/sydney.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 550px;
+    height: 250px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .australia__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg {
+    background: url("../img/tokyo.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 550px;
+    height: 250px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .jepang__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg {
+    background: url("../img/usa.jpg") center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 550px;
+    height: 250px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lamaran__content .lamaran__flex .amerika__bg figcaption {
+    color: white;
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
