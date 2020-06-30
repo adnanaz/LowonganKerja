@@ -1,46 +1,48 @@
+.perusahaan1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+
+  #kontenutama {
+    width: 900px;
+    height: 1000px;
+  }
+}
 
 // Responsive Mobile
 
 //320px
 @include media-xs {
- 
- }
- 
- //460px
- @include media-s {
-   
- }
- 
- //568px
- @include media-md {
-    
- }
- 
- //640px
- @include media-m {
-    .form-telepon{
-        width: 12rem !important;
-    }
- }
- 
- //768px
- @include media-xxl {
-    .konten-perusahaan{}
-     
- }
- 
- //992px
- @include media-l {
-    
- }
- 
- //1024px
- @include media-xl {
-    
- }
- 
- 
- //1400px
- @include media-lg {
-   
- }
+}
+
+//460px
+@include media-s {
+}
+
+//568px
+@include media-md {
+}
+
+//640px
+@include media-m {
+  .form-telepon {
+    width: 12rem !important;
+  }
+}
+
+//768px
+@include media-xxl {
+}
+
+//992px
+@include media-l {
+}
+
+//1024px
+@include media-xl {
+}
+
+//1400px
+@include media-lg {
+}

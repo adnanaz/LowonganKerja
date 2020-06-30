@@ -262,9 +262,104 @@
             <div class="header__text">
             <h1 class="lamaran__judul">Ingin melanjutkan studi sambil
                 bekerja diluar negeri?</h1>
-            <button class="uk-button uk-button-primary uk-button-default">konsultasi sekarang</button>
+            <button class="uk-button uk-button-primary uk-button-default" uk-toggle="target: #modal-close-default">konsultasi sekarang</button>
         </div>
         </section>
+
+        
+        <!-- modal section -->
+
+        <!-- This is the modal with the default close button -->
+        <div id="modal-close-default" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h4 class="uk-modal-title@s">Silahkan isi jika ingin
+                    melakukan konsultasi</h4>
+                    <hr class="hr__konsultasi">
+                    <form class="uk-form-stacked uk-text-left">
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Nama Lengkap</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="John Doe">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label2" for="form-stacked-email">Email*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-email" type="email" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label3" for="form-stacked-number">No WhatsApp*</label>
+
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-number" type="number" placeholder="+628123232">
+                                <small>Digunakan sebagai media konsultasi selain email</small>
+                            </div>
+                        </div>
+                    
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-select">Negara Yang ingin dikonsultasikan*</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-stacked-select">
+                                    <option>Jerman</option>
+                                    <option>Australia</option>
+                                    <option>Amerika</option>
+                                    <option>Jepang</option>
+                                    <option>Korea</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label2" for="form-stacked-email">Tanggal mulai kuliah*</label>
+
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-email" type="number" placeholder="example@gmail.com">
+                                <small>Digunakan sebagai media konsultasi selain email</small>
+                            </div>
+                        </div>
+                        <div class="checklist-konsultasi  uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                            <label><input class="uk-checkbox" type="checkbox">Saya setuju dengan <strong>Syarat</strong>  dan 
+                                Ketentuan serta <strong>Kebijakan Privasi</strong></label>
+                        </div>
+                        <div class="checklist-konsultasi  uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                            <label><input class="uk-checkbox" type="checkbox">Saya bersedia untuk dihubungi
+                                melalui telepon maupun e-mail
+                                untuk membantu menjawab
+                                pertanyaan saya
+                        </div>
+                        <div class="checklist-konsultasi  uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                            <label><input class="uk-checkbox" type="checkbox">Saya bersedia untuk dihubungi
+                                Saya bersedia mengirimkan 
+                                informasi yang berkaitan
+                                dengan jurusan, universitas,
+                                beasiswa, dan sekolah
+                                luar negeri
+                        </div>
+                        <div class="checklist-konsultasi  uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                            <label><input class="uk-checkbox" type="checkbox">Saya bersedia untuk dihubungi
+                                Dan, saya setuju rincian data 
+                                saya diketahui oleh universitas
+                                -universitas yang relevan, 
+                                supaya mereka dapat mengirimkan 
+                                informasi terbaru.
+                        </div>
+
+                       <div class="btn-konsul uk-text-center"> <button class="uk-button uk-button-primary">Minta konsultasi</button></div>
+                    
+                    </form>
+               
+            </div>
+        </div>
+
+      
+        <!-- modal end -->
+
+
     </header>
 
     <main>

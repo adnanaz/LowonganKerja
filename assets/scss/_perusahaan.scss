@@ -1,73 +1,65 @@
-.konten-perusahaan{
-    padding: 1rem;
-    padding-bottom: 3rem !important;
+.konten-perusahaan {
+  padding: 1rem;
+  padding-bottom: 3rem !important;
 }
 
-
-.button-pendaftaran{
-
+.button-pendaftaran {
 }
-
-
 
 // Responsive Mobile
 
 //320px
 @include media-xs {
-   .button-pendaftaran{
+  .button-pendaftaran {
     width: 10rem !important;
-    }
+  }
 
-    .konten-perusahaan{
-        margin: 0 1rem 0 1rem !important;
-    }
- }
- 
- //460px
- @include media-s {
-    .konten-perusahaan{
-        margin: 0 1rem 0 1rem !important;
-        padding: 2rem !important;
-        background-image: url(assets/img/bg.png);
-        }
+  .konten-perusahaan {
+    margin: 0 1rem 0 1rem !important;
+  }
 }
- 
- //568px
- @include media-md {
-    .konten-perusahaan{
-        margin: 0 2rem 0 2rem !important;
-        padding: 2rem !important;
-    }
- }
- 
- //640px
- @include media-m {
-    .konten-perusahaan{
-        margin: 0 2rem 0 2rem !important;
-        padding: 2rem !important;
-    }
- }
- 
- //768px
- @include media-xxl {
-   
- }
- 
- //992px
- @include media-l {
-  
- }
- 
- //1024px
- @include media-xl {
-    
- }
- 
- 
- //1400px
- @include media-lg {
-    .konten-perusahaan{
-        margin: 0 2rem 0 5rem !important;
-        padding: 7rem !important;
-    }
- }
+
+//460px
+@include media-s {
+  .konten-perusahaan {
+    margin: 0 1rem 0 1rem !important;
+    padding: 2rem !important;
+    background-image: url(assets/img/bg.png);
+  }
+}
+
+//568px
+@include media-md {
+  .konten-perusahaan {
+    margin: 0 2rem 0 2rem !important;
+    padding: 2rem !important;
+  }
+}
+
+//640px
+@include media-m {
+  .konten-perusahaan {
+    margin: 0 2rem 0 2rem !important;
+    padding: 2rem !important;
+  }
+}
+
+//768px
+@include media-xxl {
+}
+
+//992px
+@include media-l {
+}
+
+//1024px
+@include media-xl {
+}
+
+//1400px
+@include media-lg {
+  .konten-perusahaan {
+    margin: 0 2rem 0 5rem !important;
+    padding: 7rem !important;
+  }
+}
