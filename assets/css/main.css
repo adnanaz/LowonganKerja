@@ -597,11 +597,28 @@ body {
   text-align: left;
 }
 
-@media screen and (min-width: 320px) {
-  .tombol-rekruitment {
-    width: 10rem !important;
-    margin-bottom: 1rem !important;
-  }
+.card-biodata {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.vlog {
+  width: 100%;
+  height: 100%;
+}
+
+#bg-biodata {
+  background-image: url("../img/bg-biodata.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.button-biodata {
+  margin: 1rem;
+}
+
+.button-biodata a {
+  margin: 1rem;
 }
 
 @media screen and (min-width: 568px) {
@@ -1349,6 +1366,18 @@ body {
   }
 }
 
+.perusahaan1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.perusahaan1 #kontenutama {
+  width: 900px;
+  height: 1000px;
+}
+
 @media screen and (min-width: 640px) {
   .form-telepon {
     width: 12rem !important;
@@ -1359,14 +1388,14 @@ body {
   width: 13rem !important;
 }
 
-<<<<<<< HEAD
 .perusahaan-awal {
   padding: 2rem;
 }
 
 .perusahaan-awal button {
   width: 13rem;
-=======
+}
+
 .lamaran {
   width: 100%;
   height: 100%;
@@ -1390,6 +1419,10 @@ body {
 .lamaran .header__text button {
   text-transform: capitalize;
   border-radius: 0.5rem;
+}
+
+.checklist-konsultasi .uk-checkbox {
+  margin-right: 0.5rem;
 }
 
 .lamaran__content {
@@ -1970,6 +2003,5 @@ body {
     color: white;
     font-size: 1.4rem;
   }
->>>>>>> a87ef15b11b97ffe7fe877936cb80ba48ca97ca4
 }
 /*# sourceMappingURL=main.css.map */
